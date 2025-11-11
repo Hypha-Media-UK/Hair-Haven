@@ -21,25 +21,26 @@
 
   & .sub-tab {
     padding: 0.8rem 1.2rem;
-    background-color: white;
-    border: 1px solid var(--bg-light);
+    background-color: #e5e3d3;
+    border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease;
 
     & span {
       font-size: 0.95rem;
-      color: var(--primary-color);
+      color: #1a1d16;
     }
 
     &:hover {
-      border-color: var(--accent-color);
+      border-color: #448e8e;
+      background-color: #ebe9d9;
       transform: translateY(-2px);
     }
 
     &.active {
-      background-color: var(--accent-color);
-      border-color: var(--accent-color);
+      background-color: #448e8e;
+      border-color: #448e8e;
 
       & span {
         color: white;

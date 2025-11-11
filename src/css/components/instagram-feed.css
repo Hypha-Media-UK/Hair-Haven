@@ -3,7 +3,8 @@
 /* Instagram Feed Section Component Styles */
 .instagram-feed {
   padding-block: var(--section-padding);
-  background-color: var(--bg-light);
+  background-color: #448e8e;
+  color: #ffffff;
 
   @media (max-width: 768px) {
     padding-block: var(--section-padding-mobile);

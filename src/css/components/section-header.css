@@ -40,16 +40,38 @@
 /* Call to Action */
 .cta-section .section-header {
   margin-block-end: var(--space-8);
-  
+
+  & h2 {
+    color: #ffffff;
+  }
+
   & p {
-    color: var(--primary-color-light);
+    color: #ffffff;
+    opacity: 0.95;
   }
 }
 
 /* Instagram Feed */
 .instagram-feed .section-header {
+  & h2 {
+    color: #ffffff;
+  }
+
   & p {
-    color: var(--text-secondary);
+    color: #ffffff;
+    opacity: 0.95;
+  }
+}
+
+/* Products Showcase */
+.products-showcase .section-header {
+  & h2 {
+    color: #ffffff;
+  }
+
+  & p {
+    color: #ffffff;
+    opacity: 0.95;
   }
 }
 
@@ -61,14 +83,37 @@
   & h2 {
     color: white;
   }
-  
+
   & p {
     color: rgba(255, 255, 255, 0.9);
   }
 }
 
 /* Benefits Section */
-.why-join-section .section-header,
+.why-join-section .section-header {
+  & h2 {
+    color: #ffffff;
+  }
+
+  & p {
+    color: #ffffff;
+    opacity: 0.95;
+  }
+}
+
+/* About Section */
+.about-section .section-header {
+  & h2 {
+    color: #ffffff;
+  }
+
+  & p {
+    color: #ffffff;
+    opacity: 0.95;
+  }
+}
+
+/* News Section */
 .news-section .section-header {
   & p {
     color: var(--primary-color-light);

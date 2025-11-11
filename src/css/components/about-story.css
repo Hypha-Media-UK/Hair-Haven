@@ -2,7 +2,8 @@
 
 /* About Story Component Styles (extracted from Vue AboutStory.vue) */
 .about-section {
-  background-color: var(--about-bg-color, white);
+  background-color: var(--about-bg-color, #448e8e);
+  color: #ffffff;
   padding-block: var(--section-padding);
 
   @media (max-width: 768px) {

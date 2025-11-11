@@ -4,8 +4,8 @@
 
 /* Testimonials Section Component Styles */
 .testimonials {
-  background-color: var(--secondary-color);
-  color: white;
+  background-color: #448e8e;
+  color: #ffffff;
   padding-block: var(--section-padding);
 
   @media (max-width: 768px) {

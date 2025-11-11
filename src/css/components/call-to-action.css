@@ -2,9 +2,10 @@
 
 /* Call to Action Component Styles (extracted from Vue CallToAction.vue) */
 .cta-section {
+  background-color: #7e8c74;
   background-size: cover;
   background-position: center;
-  color: var(--primary-color);
+  color: #ffffff;
   text-align: center;
   padding-block: 5rem;
 

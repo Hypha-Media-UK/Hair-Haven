@@ -3,8 +3,8 @@
 /* Products Showcase Section Component Styles */
 .products-showcase {
   padding-block: var(--section-padding);
-  background-color: white;
-  color: var(--primary-color);
+  background-color: #448e8e;
+  color: #ffffff;
 
   @media (max-width: 768px) {
     padding-block: var(--section-padding-mobile);

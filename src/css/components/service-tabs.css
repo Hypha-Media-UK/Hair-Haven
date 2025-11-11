@@ -17,18 +17,18 @@
   margin-block-end: 2rem;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 5px 20px color-mix(in srgb, var(--primary-color) 10%, transparent);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 
   & .tab {
     flex: 1;
     min-width: 120px;
     padding: 1.5rem 1rem;
     text-align: center;
-    background-color: var(--bg-light);
-    color: var(--primary-color);
+    background-color: #e5e3d3;
+    color: #1a1d16;
     cursor: pointer;
     transition: all 0.3s ease;
-    border-inline-end: 1px solid color-mix(in srgb, var(--primary-color) 10%, transparent);
+    border-inline-end: 1px solid rgba(0, 0, 0, 0.1);
 
     &:last-child {
       border-inline-end: none;
@@ -46,11 +46,11 @@
     }
 
     &:hover {
-      background-color: color-mix(in srgb, var(--bg-light) 95%, var(--primary-color));
+      background-color: #d4d1c6;
     }
 
     &.active {
-      background-color: var(--accent-color);
+      background-color: #448e8e;
       color: white;
     }
 

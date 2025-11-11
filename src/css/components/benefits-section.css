@@ -2,7 +2,8 @@
 
 /* Benefits Section Component Styles (extracted from Vue BenefitsSection.vue) */
 .why-join-section {
-  background-color: white;
+  background-color: #448e8e;
+  color: #ffffff;
   padding-block: var(--section-padding);
 
   @media (max-width: 768px) {
