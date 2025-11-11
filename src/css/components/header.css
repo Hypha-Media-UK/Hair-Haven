@@ -1,0 +1,219 @@
+@layer components {
+
+/* Modern Header Component - Dark Olive Background */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: var(--z-index-fixed);
+  padding-block: var(--header-padding-block);
+  background-color: #1a1d16;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  will-change: transform, padding;
+  transform: translateZ(0); /* Force GPU acceleration */
+
+  &.scrolled {
+    padding-block: var(--header-padding-block-scrolled);
+    background-color: #1a1d16;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  }
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  z-index: 101;
+}
+
+.logo h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  color: #ffffff;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .logo h1 {
+    font-size: 1.5rem;
+  }
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 2rem;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 5px;
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  color: #e2f7d3;
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after,
+nav ul li a.router-link-active::after,
+nav ul li a.active::after {
+  width: 100%;
+  background-color: #e2f7d3;
+}
+
+/* Book Now Button Styling - Blue with white text */
+nav ul li .btn-book-now {
+  background-color: #4d7d94;
+  color: #ffffff;
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--border-radius-standard);
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-semibold);
+  text-decoration: none;
+  transition: var(--transition-standard);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #4d7d94;
+  box-shadow: 0 2px 8px rgba(77, 125, 148, 0.4);
+  vertical-align: baseline;
+  line-height: 1;
+}
+
+nav ul li .btn-book-now:hover {
+  background-color: #5a8faa;
+  border-color: #5a8faa;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(77, 125, 148, 0.6);
+  color: #ffffff;
+}
+
+nav ul li .btn-book-now::after {
+  display: none;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  z-index: 101;
+}
+
+.hamburger {
+  width: 30px;
+  height: 22px;
+  position: relative;
+}
+
+.hamburger span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 3px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.hamburger span:nth-child(1) {
+  top: 0px;
+}
+
+.hamburger span:nth-child(2) {
+  top: 9px;
+}
+
+.hamburger span:nth-child(3) {
+  top: 18px;
+}
+
+.hamburger.active span:nth-child(1) {
+  top: 9px;
+  transform: rotate(135deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+.hamburger.active span:nth-child(3) {
+  top: 9px;
+  transform: rotate(-135deg);
+}
+
+@media (max-width: 1200px) {
+  .menu-toggle {
+    display: block;
+  }
+  
+  nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100vh;
+    background-color: #1a1d16;
+    box-shadow: -2px 0 20px rgba(0,0,0,0.8);
+    border-left: 2px solid rgba(255, 255, 255, 0.1);
+    transition: right 0.3s ease;
+    z-index: 100;
+  }
+  
+  nav.active {
+    right: 0;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    padding: 100px 2rem 2rem;
+  }
+  
+  nav ul li {
+    margin: 0 0 1.5rem 0;
+  }
+  
+  nav ul li a {
+    display: block;
+    font-size: 1.2rem;
+  }
+
+  /* Mobile styling for Book Now button */
+  nav ul li .btn-book-now {
+    margin-top: var(--space-2);
+    padding: var(--space-2) var(--space-4);
+    font-size: var(--text-sm);
+    width: auto;
+    text-align: center;
+  }
+}
+
+} /* End @layer components */

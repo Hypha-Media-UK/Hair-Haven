@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair Haven - Color Swatches</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #f5f5f5;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: #1a1d16;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 3rem;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: #2d3328;
+            border-bottom: 3px solid #448e8e;
+            padding-bottom: 0.5rem;
+        }
+
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .color-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .color-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        }
+
+        .color-swatch {
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 0.9rem;
+            position: relative;
+        }
+
+        .color-info {
+            padding: 1rem;
+            background: white;
+        }
+
+        .color-name {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: #1a1d16;
+        }
+
+        .color-hex {
+            font-family: 'Courier New', monospace;
+            font-size: 1rem;
+            color: #448e8e;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .color-usage {
+            font-size: 0.85rem;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .color-rgb {
+            font-family: 'Courier New', monospace;
+            font-size: 0.85rem;
+            color: #888;
+            margin-top: 0.5rem;
+        }
+
+        .contrast-badge {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-top: 0.5rem;
+        }
+
+        .contrast-aaa {
+            background: #48bb78;
+            color: white;
+        }
+
+        .contrast-aa {
+            background: #4d7d94;
+            color: white;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+            }
+            .color-card {
+                break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌿 Hair Haven Color Palette</h1>
+        <p class="subtitle">Brand-Anchored Dark Theme Color System</p>
+
+        <!-- PRIMARY BRAND COLORS -->
+        <div class="section">
+            <h2 class="section-title">Primary Brand Colors</h2>
+            <div class="color-grid">
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: #b3c2a8; color: #1a1d16;">
+                        <span>Aa</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Sage Green</div>
+                        <div class="color-hex">#b3c2a8</div>
+                        <div class="color-rgb">RGB(179, 194, 168)</div>
+                        <div class="color-usage">Header & Footer background, primary brand color</div>
+                        <span class="contrast-badge contrast-aaa">WCAG AAA</span>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: #7e8c74; color: white;">
+                        <span>Aa</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Forest Green</div>
+                        <div class="color-hex">#7e8c74</div>
+                        <div class="color-rgb">RGB(126, 140, 116)</div>
+                        <div class="color-usage">Secondary brand color, muted accents</div>
+                        <span class="contrast-badge contrast-aa">WCAG AA</span>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: #448e8e; color: white;">
+                        <span>Aa</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Teal</div>
+                        <div class="color-hex">#448e8e</div>
+                        <div class="color-rgb">RGB(68, 142, 142)</div>
+                        <div class="color-usage">Primary CTA buttons, active states, highlights</div>
+                        <span class="contrast-badge contrast-aa">WCAG AA</span>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: #4d7d94; color: white;">
+                        <span>Aa</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Blue Accent</div>
+                        <div class="color-hex">#4d7d94</div>
+                        <div class="color-rgb">RGB(77, 125, 148)</div>
+                        <div class="color-usage">Secondary accent, info elements</div>
+                        <span class="contrast-badge contrast-aa">WCAG AA</span>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: #e2f7d3; color: #1a1d16;">
+                        <span>Aa</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Light Mint</div>
+                        <div class="color-hex">#e2f7d3</div>
+                        <div class="color-rgb">RGB(226, 247, 211)</div>
+                        <div class="color-usage">Highlights, subtle backgrounds</div>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: #1a1d16; color: #e8e5da;">
+                        <span>Aa</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Dark Olive Charcoal</div>
+                        <div class="color-hex">#1a1d16</div>
+                        <div class="color-rgb">RGB(26, 29, 22)</div>
+                        <div class="color-usage">Main dark background, body background</div>
+                        <span class="contrast-badge contrast-aaa">WCAG AAA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TEXT COLORS -->
+        <div class="section">
+            <h2 class="section-title">Text Colors</h2>
+            <div class="color-grid">
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: #1a1d16; color: #e8e5da;">
+                        <span>Primary Text</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Cream</div>
+                        <div class="color-hex">#e8e5da</div>
+                        <div class="color-rgb">RGB(232, 229, 218)</div>
+                        <div class="color-usage">Primary text on dark backgrounds</div>
+                        <span class="contrast-badge contrast-aaa">14:1 Ratio</span>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: #b3c2a8; color: #1a1d16;">
+                        <span>Header Text</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Dark Olive</div>
+                        <div class="color-hex">#1a1d16</div>
+                        <div class="color-rgb">RGB(26, 29, 22)</div>
+                        <div class="color-usage">Text on sage green header/footer</div>
+                        <span class="contrast-badge contrast-aaa">8.5:1 Ratio</span>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: #1a1d16; color: #d4d1c6;">
+                        <span>Secondary Text</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Cream Dark</div>
+                        <div class="color-hex">#d4d1c6</div>
+                        <div class="color-rgb">RGB(212, 209, 198)</div>
+                        <div class="color-usage">Less prominent text, descriptions</div>
+                        <span class="contrast-badge contrast-aa">WCAG AA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BACKGROUND COLORS -->
+        <div class="section">
+            <h2 class="section-title">Background & Surface Colors</h2>
+            <div class="color-grid">
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: #1a1d16; color: #e8e5da;">
+                        <span>Base</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Surface Sunken</div>
+                        <div class="color-hex">#1a1d16</div>
+                        <div class="color-rgb">RGB(26, 29, 22)</div>
+                        <div class="color-usage">Main background, deepest level</div>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: #242820; color: #e8e5da;">
+                        <span>Level 1</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Surface Base</div>
+                        <div class="color-hex">#242820</div>
+                        <div class="color-rgb">RGB(36, 40, 32)</div>
+                        <div class="color-usage">Section backgrounds, base surface</div>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: #2d3328; color: #e8e5da;">
+                        <span>Level 2</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Surface Elevated</div>
+                        <div class="color-hex">#2d3328</div>
+                        <div class="color-rgb">RGB(45, 51, 40)</div>
+                        <div class="color-usage">Cards, elevated surfaces</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ACCENT VARIATIONS -->
+        <div class="section">
+            <h2 class="section-title">Accent Variations</h2>
+            <div class="color-grid">
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: #c5d4bc; color: #1a1d16;">
+                        <span>Aa</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Sage Bright</div>
+                        <div class="color-hex">#c5d4bc</div>
+                        <div class="color-rgb">RGB(197, 212, 188)</div>
+                        <div class="color-usage">Emphasis, lighter sage variant</div>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: #8fa082; color: white;">
+                        <span>Aa</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Sage Muted</div>
+                        <div class="color-hex">#8fa082</div>
+                        <div class="color-rgb">RGB(143, 160, 130)</div>
+                        <div class="color-usage">Subtle elements, borders</div>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: #5aa8a8; color: white;">
+                        <span>Aa</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Teal Bright</div>
+                        <div class="color-hex">#5aa8a8</div>
+                        <div class="color-rgb">RGB(90, 168, 168)</div>
+                        <div class="color-usage">Hover states, bright accents</div>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: #5a5f1a; color: white;">
+                        <span>Aa</span>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Olive Medium</div>
+                        <div class="color-hex">#5a5f1a</div>
+                        <div class="color-rgb">RGB(90, 95, 26)</div>
+                        <div class="color-usage">Footer copyright, subtle text</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- USAGE GUIDE -->
+        <div class="section">
+            <h2 class="section-title">Usage Guide</h2>
+            <div style="background: #f9f9f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #448e8e;">
+                <h3 style="margin-bottom: 1rem; color: #1a1d16;">Color Application</h3>
+                <ul style="line-height: 2; color: #2d3328;">
+                    <li><strong>Header/Footer:</strong> Sage Green (#b3c2a8) background with Dark Olive (#1a1d16) text</li>
+                    <li><strong>Body:</strong> Dark Olive Charcoal (#1a1d16) background with Cream (#e8e5da) text</li>
+                    <li><strong>Cards:</strong> Surface Elevated (#2d3328) with subtle sage borders</li>
+                    <li><strong>Buttons (Primary):</strong> Teal (#448e8e) with white text</li>
+                    <li><strong>Links:</strong> Teal (#448e8e) on dark, Dark Olive (#1a1d16) on sage</li>
+                    <li><strong>Accents:</strong> Use Teal (#448e8e) for highlights and active states</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

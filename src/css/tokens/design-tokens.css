@@ -1,0 +1,267 @@
+@layer tokens {
+
+/* Comprehensive Design Token System - Single Source of Truth */
+
+:root {
+  /* === COLOR PALETTE === */
+  /* DARK THEME - Hair Haven Luxury Spa Aesthetic */
+
+  /* Primary brand colors - Dark theme optimized */
+  --primary-color: #b3c2a8;      /* HH sage green - now used as accent on dark */
+  --secondary-color: #7e8c74;    /* HH forest green - muted accent */
+  --accent-color: #448e8e;       /* HH teal - vibrant accent for CTAs */
+  --light-color: #e2f7d3;        /* HH light mint - for highlights */
+  --dark-color: #1a1d16;         /* HH very dark olive-charcoal base */
+  --highlight-color: #4d7d94;    /* HH blue - secondary accent */
+
+  /* Text colors - Dark theme (light text on dark backgrounds) */
+  --text-primary: #e8e5da;       /* HH cream - primary text color */
+  --text-secondary: #b3c2a8;     /* HH sage green - secondary text */
+  --text-light: #7e8c74;         /* HH forest green - muted text */
+
+  /* Functional colors - adjusted for dark theme */
+  --success-color: #5dd39e;      /* Brighter green for visibility */
+  --warning-color: #ffa94d;      /* Brighter orange for visibility */
+  --error-color: #ff6b6b;        /* Brighter red for visibility */
+  --info-color: #4d7d94;         /* Using HH blue */
+
+  /* Background colors - Dark theme layers */
+  --bg-light: #242820;           /* HH dark olive-gray - lighter sections */
+  --bg-dark: #1a1d16;            /* HH very dark olive-charcoal - main bg */
+  --bg-alternate: #2d3328;       /* HH medium dark olive - alternate sections */
+
+  /* Border colors - Dark theme */
+  --border-color: #3a3f35;       /* Subtle dark borders */
+  --border-dark: #5a6b52;        /* Visible sage green borders */
+
+  /* Modern color manipulation - Dark theme variations */
+  --accent-color-dark: color-mix(in srgb, var(--accent-color) 70%, black);
+  --accent-color-light: color-mix(in srgb, var(--accent-color) 120%, white);
+  --primary-color-light: color-mix(in srgb, var(--primary-color) 120%, white);
+  --primary-color-lighter: color-mix(in srgb, var(--primary-color) 140%, white);
+  --primary-color-lightest: color-mix(in srgb, var(--primary-color) 160%, white);
+
+  /* Dark theme specific color variations */
+  --sage-bright: #c5d4bc;        /* Brighter sage for emphasis */
+  --sage-muted: #8fa082;         /* Muted sage for subtle elements */
+  --teal-bright: #5aa8a8;        /* Brighter teal for hover states */
+  --cream-dark: #d4d1c6;         /* Darker cream for less prominent text */
+
+  /* Card and surface colors for dark theme */
+  --surface-elevated: #2d3328;   /* Elevated surfaces (cards) */
+  --surface-base: #242820;       /* Base surface level */
+  --surface-sunken: #1a1d16;     /* Sunken/background areas */
+
+  /* === TYPOGRAPHY === */
+  /* Font families */
+  --font-family-primary: 'Playfair Display', serif;
+  --font-family-secondary: 'Poppins', sans-serif;
+  --font-family-base: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  /* Font weights */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Line heights */
+  --line-height-tight: 1.25;
+  --line-height-snug: 1.375;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.625;
+  --line-height-loose: 2;
+
+  /* Typography scale */
+  --text-xs: 0.75rem;      /* 12px */
+  --text-sm: 0.875rem;     /* 14px */
+  --text-base: 1rem;       /* 16px */
+  --text-lg: 1.125rem;     /* 18px */
+  --text-xl: 1.25rem;      /* 20px */
+  --text-2xl: 1.5rem;      /* 24px */
+  --text-3xl: 1.875rem;    /* 30px */
+  --text-4xl: 2.25rem;     /* 36px */
+  --text-5xl: 3rem;        /* 48px */
+  --text-6xl: 3.75rem;     /* 60px */
+
+  /* Semantic heading sizes */
+  --heading-h1: var(--text-5xl);
+  --heading-h2: var(--text-4xl);
+  --heading-h3: var(--text-3xl);
+  --heading-h4: var(--text-2xl);
+  --heading-h5: var(--text-xl);
+  --heading-h6: var(--text-lg);
+
+  /* Semantic typography tokens */
+  --text-hero: var(--text-6xl);
+  --text-section-title: var(--text-4xl);
+  --text-card-title: var(--text-xl);
+  --text-body: var(--text-base);
+  --text-caption: var(--text-sm);
+  --text-label: var(--text-sm);
+
+  /* === SPACING === */
+  /* Base spacing scale */
+  --space-0: 0;
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.25rem;   /* 20px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-8: 2rem;      /* 32px */
+  --space-10: 2.5rem;   /* 40px */
+  --space-12: 3rem;     /* 48px */
+  --space-16: 4rem;     /* 64px */
+  --space-20: 5rem;     /* 80px */
+  --space-24: 6rem;     /* 96px */
+  --space-32: 8rem;     /* 128px */
+
+  /* Extended spacing scale */
+  --space-3xl: var(--space-16);  /* 4rem / 64px */
+
+  /* Semantic spacing tokens */
+  --section-padding: var(--space-20);
+  --section-padding-mobile: var(--space-16);
+  --card-padding: var(--space-8);
+  --card-padding-sm: var(--space-6);
+  --card-padding-lg: var(--space-10);
+
+  /* Legacy spacing aliases for backward compatibility */
+  --spacing-1: var(--space-1);
+  --spacing-2: var(--space-2);
+  --spacing-3: var(--space-3);
+  --spacing-4: var(--space-4);
+  --spacing-5: var(--space-5);
+  --spacing-6: var(--space-6);
+  --spacing-8: var(--space-8);
+  --spacing-10: var(--space-10);
+  --spacing-12: var(--space-12);
+  --spacing-16: var(--space-16);
+  --spacing-20: var(--space-20);
+
+  /* Grid gaps */
+  --gap-xs: var(--space-2);
+  --gap-sm: var(--space-4);
+  --gap-md: var(--space-6);
+  --gap-lg: var(--space-8);
+  --gap-xl: var(--space-12);
+
+  /* Grid system tokens */
+  --grid-columns-cards: repeat(auto-fit, minmax(300px, 1fr));
+  --grid-columns-gallery: repeat(auto-fit, minmax(160px, 1fr));
+  --grid-columns-large-cards: repeat(auto-fit, minmax(320px, 1fr));
+  --grid-columns-small-cards: repeat(auto-fit, minmax(250px, 1fr));
+  --grid-gap-standard: 2rem;
+  --grid-gap-small: 1rem;
+  --grid-gap-large: 3rem;
+
+  /* === LAYOUT === */
+  /* Breakpoints */
+  --breakpoint-xs: 480px;
+  --breakpoint-sm: 768px;
+  --breakpoint-md: 1024px;
+  --breakpoint-lg: 1280px;
+  --breakpoint-xl: 1536px;
+
+  /* Container queries */
+  --container-xs: 20rem;    /* 320px */
+  --container-sm: 24rem;    /* 384px */
+  --container-md: 28rem;    /* 448px */
+  --container-lg: 32rem;    /* 512px */
+  --container-xl: 36rem;    /* 576px */
+  --container-2xl: 42rem;   /* 672px */
+  --container-3xl: 48rem;   /* 768px */
+
+  /* === VISUAL DESIGN === */
+  /* Border radius */
+  --border-radius-sm: 0.125rem;
+  --border-radius-standard: 0.5rem;
+  --border-radius-lg: 0.75rem;
+  --border-radius-xl: 1rem;
+  --border-radius-full: 9999px;
+
+  /* Shadows - Dark theme (deeper, more pronounced) */
+  --shadow-sm: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+  --shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.4), 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 6px 12px -2px rgba(0, 0, 0, 0.5), 0 3px 6px -1px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 15px 25px -5px rgba(0, 0, 0, 0.6), 0 6px 10px -3px rgba(0, 0, 0, 0.5);
+  --shadow-xl: 0 25px 40px -8px rgba(0, 0, 0, 0.7), 0 12px 15px -6px rgba(0, 0, 0, 0.6);
+
+  /* Card-specific shadows - Dark theme with subtle glow */
+  --card-shadow-light: 0 5px 20px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(179, 194, 168, 0.1);
+  --card-shadow-medium: 0 8px 25px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(179, 194, 168, 0.15);
+  --card-shadow-strong: 0 10px 30px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(179, 194, 168, 0.2);
+  --card-shadow-hover-light: 0 15px 35px rgba(0, 0, 0, 0.5), 0 0 20px rgba(68, 142, 142, 0.15);
+  --card-shadow-hover-medium: 0 20px 45px rgba(0, 0, 0, 0.6), 0 0 30px rgba(68, 142, 142, 0.2);
+
+  /* === INTERACTIONS === */
+  /* Transitions */
+  --transition-fast: all 0.2s ease;
+  --transition-standard: all 0.3s ease;
+  --transition-slow: all 0.5s ease;
+
+  /* === COMPONENT TOKENS === */
+  /* Header */
+  --header-padding-block: 1.5rem;
+  --header-padding-block-scrolled: 0.8rem;
+  --header-content-height: 2.5rem;
+  --header-height: calc(var(--header-content-height) + (var(--header-padding-block) * 2));
+  --header-height-scrolled: calc(var(--header-content-height) + (var(--header-padding-block-scrolled) * 2));
+
+  /* Z-index scale */
+  --z-index-dropdown: 1000;
+  --z-index-sticky: 1020;
+  --z-index-fixed: 1030;
+  --z-index-modal-backdrop: 1040;
+  --z-index-modal: 1050;
+  --z-index-popover: 1060;
+  --z-index-tooltip: 1070;
+}
+
+/* === RESPONSIVE ADJUSTMENTS === */
+@media (max-width: 768px) {
+  :root {
+    /* Responsive typography */
+    --heading-h1: var(--text-4xl);
+    --heading-h2: var(--text-3xl);
+    --heading-h3: var(--text-2xl);
+    --heading-h4: var(--text-xl);
+    --heading-h5: var(--text-lg);
+    --heading-h6: var(--text-base);
+    
+    --text-hero: var(--text-5xl);
+    --text-section-title: var(--text-3xl);
+    --text-card-title: var(--text-lg);
+
+    /* Responsive spacing */
+    --section-padding: var(--space-16);
+    --section-padding-mobile: var(--space-12);
+    --card-padding: var(--space-6);
+    --card-padding-lg: var(--space-8);
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    /* Extra small responsive typography */
+    --heading-h1: var(--text-3xl);
+    --heading-h2: var(--text-2xl);
+    --heading-h3: var(--text-xl);
+    --heading-h4: var(--text-lg);
+    --heading-h5: var(--text-base);
+    --heading-h6: var(--text-sm);
+    
+    --text-hero: var(--text-4xl);
+    --text-section-title: var(--text-2xl);
+    --text-card-title: var(--text-base);
+
+    /* Extra small responsive spacing */
+    --section-padding: var(--space-12);
+    --section-padding-mobile: var(--space-10);
+    --card-padding: var(--space-4);
+    --card-padding-lg: var(--space-6);
+  }
+}
+
+} /* End @layer tokens */

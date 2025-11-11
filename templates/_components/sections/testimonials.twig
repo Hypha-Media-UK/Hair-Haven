@@ -1,0 +1,36 @@
+{% set sectionData = {
+  title: 'Customer Reviews',
+  subtitle: 'See what our clients say about us',
+  handle: 'testimonials'
+} %}
+{% cache using key 'testimonials-section' for 4 hours %}
+<section class="testimonials section-base section-base--default">
+    <div class="container">
+        {% if sectionData.title %}
+            <div class="section-header section-header--center">
+                <h2>{{ sectionData.title }}</h2>
+                {% if sectionData.subtitle %}
+                    <p>{{ sectionData.subtitle }}</p>
+                {% endif %}
+            </div>
+        {% endif %}
+
+        <div class="testimonials-widget-container">
+            <script>
+                (function() {
+                    var script = document.createElement('script');
+                    script.src = 'https://www.salonspy.co.uk/widget/widget.js?token=68489bc5e0e750815abded3ed46339c4';
+                    script.async = true;
+                    document.head.appendChild(script);
+                })();
+            </script>
+            <div class="salonspy-widget"
+                 data-type="carousel"
+                 data-token="68489bc5e0e750815abded3ed46339c4"
+                 role="region"
+                 aria-label="Customer testimonials">
+            </div>
+        </div>
+    </div>
+</section>
+{% endcache %}
