@@ -1,4 +1,4 @@
-dateModified: 1762786868
+dateModified: 1763112917
 elementSources:
   craft\elements\Entry:
     -
@@ -41,7 +41,7 @@ elementSources:
       type: native
 email:
   fromEmail: access@hypha.media
-  fromName: 'Hair Haven'
+  fromName: TLE-2025
   transportType: craft\mail\transportadapters\Sendmail
 fs:
   assets:
@@ -51,6 +51,10 @@ fs:
       path: assets
     type: craft\fs\Local
     url: /assets
+graphql:
+  publicToken:
+    enabled: false
+    expiryDate: null
 meta:
   __names__:
     0af69162-000c-4bb3-a42e-77f5a08558e3: Phone # Phone
@@ -169,7 +173,7 @@ plugins:
       allowAttachments: ''
       allowedMessageFields: null
       prependSender: 'On behalf of'
-      prependSubject: 'New message from Hair Haven'
+      prependSubject: 'New message from TLE-2025'
       successFlashMessage: 'Your message has been sent.'
       toEmail: martin@hypha.media
   field-manager:
@@ -236,6 +240,7 @@ system:
   edition: solo
   live: true
   name: 'Hair Haven'
+  retryDuration: null
   schemaVersion: 5.8.0.3
   timeZone: America/Los_Angeles
 users:
