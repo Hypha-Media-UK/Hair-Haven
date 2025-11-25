@@ -132,21 +132,21 @@
     font-size: var(--text-base);
     font-family: inherit;
     transition: var(--transition-standard);
-    background-color: var(--primary-color);
-    color: var(--text-primary);
+    background-color: #879abe;
+    color: var(--dark-color);
     box-sizing: border-box;
     min-height: 44px;
 
     &:focus {
       outline: none;
       border-color: var(--accent-color);
-      background-color: var(--bg-light);
+      background-color: #9daec9;
       box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent-color) 10%, transparent);
       transform: translateY(-1px);
     }
 
     &::placeholder {
-      color: var(--text-secondary);
+      color: #4a5a7a;
       font-size: var(--text-sm);
     }
   }
@@ -187,17 +187,18 @@
       padding: var(--space-6);
       text-align: center;
       cursor: pointer;
-      background-color: var(--bg-light);
+      background-color: #879abe;
+      color: var(--dark-color);
       min-height: 60px;
 
       &:hover {
         border-color: var(--accent-color);
-        background-color: white;
+        background-color: #9daec9;
       }
 
       &:focus {
         border-color: var(--accent-color);
-        background-color: white;
+        background-color: #9daec9;
         box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent-color) 10%, transparent);
       }
     }
@@ -430,21 +431,21 @@ select.fui-select {
   border-radius: clamp(6px, 1vw, 8px) !important;
   font-size: clamp(0.95rem, 1.8vw, 1rem) !important;
   transition: all 0.3s ease !important;
-  background-color: var(--primary-color) !important;
-  color: var(--text-primary) !important;
+  background-color: #879abe !important;
+  color: var(--dark-color) !important;
   box-sizing: border-box !important;
   min-height: 44px !important; /* Minimum touch target size */
 
   &:focus {
     outline: none !important;
     border-color: var(--accent-color) !important;
-    background-color: var(--bg-light) !important;
+    background-color: #9daec9 !important;
     box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent-color) 10%, transparent) !important;
     transform: translateY(-1px) !important;
   }
 
   &::placeholder {
-    color: var(--text-secondary) !important;
+    color: #4a5a7a !important;
     font-size: clamp(0.9rem, 1.6vw, 0.95rem) !important;
   }
 
