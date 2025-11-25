@@ -21,29 +21,32 @@
 
   & .sub-tab {
     padding: 0.8rem 1.2rem;
-    background-color: #e5e3d3;
-    border: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: var(--bg-sage-light);
+    border: 2px solid var(--border-color);
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease;
 
     & span {
       font-size: 0.95rem;
-      color: #1a1d16;
+      color: var(--text-primary);
+      font-weight: 500;
     }
 
     &:hover {
-      border-color: #448e8e;
-      background-color: #ebe9d9;
+      border-color: var(--accent-color);
+      background-color: var(--primary-color);
       transform: translateY(-2px);
+      box-shadow: var(--shadow-sm);
     }
 
     &.active {
-      background-color: #448e8e;
-      border-color: #448e8e;
+      background-color: var(--accent-color);
+      border-color: var(--accent-color);
 
       & span {
-        color: white;
+        color: var(--dark-color);
+        font-weight: 600;
       }
     }
 

@@ -3,7 +3,7 @@
 /* Team Grid Component Styles (extracted from Vue TeamGrid.vue and TeamMemberCard.vue) */
 .team-section {
   padding-block: 5rem;
-  background-color: white;
+  background-color: var(--bg-cream);
 
   & .team-intro {
     text-align: center;
@@ -13,11 +13,11 @@
     & h2 {
       font-size: 2.2rem;
       margin-block-end: 1rem;
-      color: var(--primary-color);
+      color: var(--accent-color);
     }
 
     & p {
-      color: var(--primary-color-light);
+      color: var(--text-primary);
       line-height: 1.6;
     }
   }
@@ -49,7 +49,8 @@
       border-radius: 8px;
       overflow: hidden;
       position: relative;
-      box-shadow: 0 5px 15px color-mix(in srgb, var(--primary-color) 10%, transparent);
+      box-shadow: var(--shadow-lg);
+      border: 2px solid var(--border-color);
 
       & img {
         width: 100%;
@@ -66,7 +67,7 @@
       & .member-overlay {
         position: absolute;
         inset: 0;
-        background-color: color-mix(in srgb, var(--accent-color) 70%, transparent);
+        background-color: color-mix(in srgb, var(--accent-color) 85%, transparent);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -74,12 +75,13 @@
         transition: opacity 0.3s ease;
 
         & span {
-          color: white;
-          font-weight: 600;
+          color: var(--dark-color);
+          font-weight: 700;
           font-size: 1.2rem;
           padding: 0.8rem 1.5rem;
-          border: 2px solid white;
+          border: 2px solid var(--dark-color);
           border-radius: 4px;
+          background-color: var(--accent-color);
         }
       }
     }
@@ -91,11 +93,12 @@
       & h3 {
         font-size: 1.4rem;
         margin-block-end: 0.5rem;
-        color: var(--primary-color);
+        color: var(--text-white);
       }
 
       & .member-role {
         color: var(--accent-color);
+        font-weight: 500;
       }
     }
   }

@@ -1,4 +1,4 @@
-dateModified: 1763112917
+dateModified: 1764086323
 elementSources:
   craft\elements\Entry:
     -
@@ -139,6 +139,7 @@ meta:
     c969543d-de4c-4d09-9576-8758dc27afd1: 'Testimonials Section' # Testimonials Section
     cd54e7f4-5c22-4c1f-97e1-6e017ee1fcc6: 'Sub Services' # Sub Services
     d2c3b28c-ed81-4d1d-a2c8-8a4cfff51ecd: 'Price List' # Price List
+    d2f55de7-1c60-480a-99db-3d871461fe31: 'Text Color' # Text Color
     d51d5a9b-69fe-4e13-acd6-d4f9a20ccae1: 'Title Text' # Title Text
     d60136f4-9baf-4f3c-9a20-bbd1bf47b28a: Services # Services
     d9707244-1d4e-4b5b-9d06-b6055492603e: 'Hair Haven' # Hair Haven

@@ -3,8 +3,8 @@
 /* Services Preview Section Component Styles - Modern Container Query Version */
 .services-preview {
   /* Component-specific overrides for base section */
-  background-color: #1a1d16;
-  color: #e2f7d3;
+  background-color: var(--bg-light);
+  color: var(--text-primary);
   
   & .services-grid {
     display: grid;
@@ -42,7 +42,7 @@
       & .service-title {
         margin-block-end: var(--space-4);
         font-size: var(--text-xl);
-        color: var(--primary-color);
+        color: var(--text-white);
       }
 
       & .service-description {

@@ -3,7 +3,7 @@
 /* Contact Info Section Component Styles (extracted from Vue ContactInfoSection.vue) */
 .contact-info-section {
   padding-block: 6rem;
-  background-color: #fafafa;
+  background-color: var(--bg-cream);
 
   & .contact-grid {
     display: grid;
@@ -28,11 +28,11 @@
   }
 
   & .contact-form-container {
-    background-color: white;
+    background-color: var(--bg-sage-light);
     border-radius: 12px;
     padding: 3rem;
-    box-shadow: 0 10px 30px color-mix(in srgb, var(--primary-color) 12%, transparent);
-    border: 1px solid color-mix(in srgb, var(--primary-color) 5%, transparent);
+    box-shadow: var(--shadow-lg);
+    border: 2px solid var(--border-color);
 
     @media (max-width: 768px) {
       padding: 2rem;

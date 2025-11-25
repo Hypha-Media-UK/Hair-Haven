@@ -4,53 +4,60 @@
 
 :root {
   /* === COLOR PALETTE === */
-  /* DARK THEME - Hair Haven Luxury Spa Aesthetic */
+  /* DARK THEME - Hair Haven Navy & Gold Aesthetic */
 
-  /* Primary brand colors - Dark theme optimized */
-  --primary-color: #b3c2a8;      /* HH sage green - now used as accent on dark */
-  --secondary-color: #7e8c74;    /* HH forest green - muted accent */
-  --accent-color: #448e8e;       /* HH teal - vibrant accent for CTAs */
-  --light-color: #e2f7d3;        /* HH light mint - for highlights */
-  --dark-color: #1a1d16;         /* HH very dark olive-charcoal base */
-  --highlight-color: #4d7d94;    /* HH blue - secondary accent */
+  /* Primary brand colors - Navy & Slate Blues */
+  --primary-color: #1b263b;      /* Deep navy blue - primary brand */
+  --secondary-color: #415a77;    /* Slate blue - secondary */
+  --accent-color: #ffc300;       /* Vibrant golden yellow - premium accent */
+  --accent-teal: #b0c4b1;        /* Soft sage green accent */
+  --light-color: #e0e1dd;        /* Light gray for text */
+  --dark-color: #0d1b2a;         /* Darkest navy - backgrounds */
+  --highlight-color: #ffc300;    /* Golden yellow - highlights and CTAs */
 
   /* Text colors - Dark theme (light text on dark backgrounds) */
-  --text-primary: #e8e5da;       /* HH cream - primary text color */
-  --text-secondary: #b3c2a8;     /* HH sage green - secondary text */
-  --text-light: #7e8c74;         /* HH forest green - muted text */
+  --text-primary: #e0e1dd;       /* Light gray - primary text */
+  --text-secondary: #778da9;     /* Blue-gray - secondary text */
+  --text-light: #778da9;         /* Blue-gray - muted text */
+  --text-white: #ffffff;         /* Pure white for emphasis */
+  --text-cream: #e0e1dd;         /* Light gray for softer text */
 
-  /* Functional colors - adjusted for dark theme */
-  --success-color: #5dd39e;      /* Brighter green for visibility */
-  --warning-color: #ffa94d;      /* Brighter orange for visibility */
-  --error-color: #ff6b6b;        /* Brighter red for visibility */
-  --info-color: #4d7d94;         /* Using HH blue */
+  /* Functional colors - Dark theme optimized */
+  --success-color: #b0c4b1;      /* Soft sage for success */
+  --warning-color: #ffc300;      /* Golden yellow for warnings */
+  --error-color: #ff6b6b;        /* Soft red for errors */
+  --info-color: #778da9;         /* Blue-gray for info */
 
   /* Background colors - Dark theme layers */
-  --bg-light: #242820;           /* HH dark olive-gray - lighter sections */
-  --bg-dark: #1a1d16;            /* HH very dark olive-charcoal - main bg */
-  --bg-alternate: #2d3328;       /* HH medium dark olive - alternate sections */
+  --bg-light: #1b263b;           /* Navy - cards and elevated surfaces */
+  --bg-cream: #0d1b2a;           /* Darkest navy - body background */
+  --bg-sage-light: #415a77;      /* Slate blue - feature sections */
+  --bg-sage: #1b263b;            /* Navy - cards */
+  --bg-alternate: #1b263b;       /* Navy - alternate sections */
 
   /* Border colors - Dark theme */
-  --border-color: #3a3f35;       /* Subtle dark borders */
-  --border-dark: #5a6b52;        /* Visible sage green borders */
+  --border-color: #415a77;       /* Slate blue border */
+  --border-medium: #778da9;      /* Blue-gray border */
+  --border-dark: #e0e1dd;        /* Light border for emphasis */
 
   /* Modern color manipulation - Dark theme variations */
-  --accent-color-dark: color-mix(in srgb, var(--accent-color) 70%, black);
-  --accent-color-light: color-mix(in srgb, var(--accent-color) 120%, white);
-  --primary-color-light: color-mix(in srgb, var(--primary-color) 120%, white);
-  --primary-color-lighter: color-mix(in srgb, var(--primary-color) 140%, white);
-  --primary-color-lightest: color-mix(in srgb, var(--primary-color) 160%, white);
+  --accent-color-dark: #e6b000;  /* Darker golden yellow */
+  --accent-color-light: #ffd43b; /* Lighter golden yellow */
+  --primary-color-light: #415a77; /* Lighter navy (slate) */
+  --primary-color-lighter: #778da9; /* Even lighter (blue-gray) */
+  --primary-color-lightest: #e0e1dd; /* Lightest (light gray) */
 
   /* Dark theme specific color variations */
-  --sage-bright: #c5d4bc;        /* Brighter sage for emphasis */
-  --sage-muted: #8fa082;         /* Muted sage for subtle elements */
-  --teal-bright: #5aa8a8;        /* Brighter teal for hover states */
-  --cream-dark: #d4d1c6;         /* Darker cream for less prominent text */
+  --sage-bright: #b0c4b1;        /* Bright sage for emphasis */
+  --sage-muted: #778da9;         /* Muted blue-gray for subtle elements */
+  --teal-bright: #b0c4b1;        /* Sage green for hover states */
+  --cream-warm: #e0e1dd;         /* Light gray for backgrounds */
+  --gold-soft: #ffd43b;          /* Soft gold for accents */
 
   /* Card and surface colors for dark theme */
-  --surface-elevated: #2d3328;   /* Elevated surfaces (cards) */
-  --surface-base: #242820;       /* Base surface level */
-  --surface-sunken: #1a1d16;     /* Sunken/background areas */
+  --surface-elevated: #1b263b;   /* Elevated surfaces (cards) - navy */
+  --surface-base: #0d1b2a;       /* Base surface level - darkest navy */
+  --surface-sunken: #0d1b2a;     /* Sunken/background areas - darkest navy */
 
   /* === TYPOGRAPHY === */
   /* Font families */
@@ -179,21 +186,23 @@
   --border-radius-standard: 0.5rem;
   --border-radius-lg: 0.75rem;
   --border-radius-xl: 1rem;
+  --border-radius-2xl: 1.5rem;
   --border-radius-full: 9999px;
 
-  /* Shadows - Dark theme (deeper, more pronounced) */
-  --shadow-sm: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
-  --shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.4), 0 1px 3px 0 rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 6px 12px -2px rgba(0, 0, 0, 0.5), 0 3px 6px -1px rgba(0, 0, 0, 0.4);
-  --shadow-lg: 0 15px 25px -5px rgba(0, 0, 0, 0.6), 0 6px 10px -3px rgba(0, 0, 0, 0.5);
-  --shadow-xl: 0 25px 40px -8px rgba(0, 0, 0, 0.7), 0 12px 15px -6px rgba(0, 0, 0, 0.6);
+  /* Shadows - Dark theme (deeper, more dramatic) */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4), 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 10px 10px -5px rgba(0, 0, 0, 0.4);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
 
-  /* Card-specific shadows - Dark theme with subtle glow */
-  --card-shadow-light: 0 5px 20px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(179, 194, 168, 0.1);
-  --card-shadow-medium: 0 8px 25px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(179, 194, 168, 0.15);
-  --card-shadow-strong: 0 10px 30px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(179, 194, 168, 0.2);
-  --card-shadow-hover-light: 0 15px 35px rgba(0, 0, 0, 0.5), 0 0 20px rgba(68, 142, 142, 0.15);
-  --card-shadow-hover-medium: 0 20px 45px rgba(0, 0, 0, 0.6), 0 0 30px rgba(68, 142, 142, 0.2);
+  /* Card-specific shadows - Dark theme with depth */
+  --card-shadow-light: 0 2px 8px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.2);
+  --card-shadow-medium: 0 4px 12px rgba(0, 0, 0, 0.4), 0 2px 6px rgba(0, 0, 0, 0.3);
+  --card-shadow-strong: 0 8px 20px rgba(0, 0, 0, 0.5), 0 3px 8px rgba(0, 0, 0, 0.4);
+  --card-shadow-hover-light: 0 8px 16px rgba(255, 195, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.4);
+  --card-shadow-hover-medium: 0 12px 24px rgba(255, 195, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.5);
 
   /* === INTERACTIONS === */
   /* Transitions */

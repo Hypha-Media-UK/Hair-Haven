@@ -17,18 +17,18 @@
   margin-block-end: 2rem;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow-lg);
 
   & .tab {
     flex: 1;
     min-width: 120px;
     padding: 1.5rem 1rem;
     text-align: center;
-    background-color: #e5e3d3;
-    color: #1a1d16;
+    background-color: var(--bg-sage-light);
+    color: var(--text-primary);
     cursor: pointer;
     transition: all 0.3s ease;
-    border-inline-end: 1px solid rgba(0, 0, 0, 0.1);
+    border-inline-end: 1px solid var(--border-color);
 
     &:last-child {
       border-inline-end: none;
@@ -38,6 +38,7 @@
       display: block!important;
       font-size: 1.8rem;
       margin-block-end: 0.8rem;
+      color: var(--accent-color);
     }
 
     & span {
@@ -46,12 +47,21 @@
     }
 
     &:hover {
-      background-color: #d4d1c6;
+      background-color: var(--primary-color);
+      color: var(--text-white);
+
+      & i {
+        color: var(--accent-color);
+      }
     }
 
     &.active {
-      background-color: #448e8e;
-      color: white;
+      background-color: var(--accent-color);
+      color: var(--dark-color);
+
+      & i {
+        color: var(--dark-color);
+      }
     }
 
     @media (max-width: 768px) {

@@ -2,8 +2,8 @@
 
 /* About Story Component Styles (extracted from Vue AboutStory.vue) */
 .about-section {
-  background-color: var(--about-bg-color, #448e8e);
-  color: #ffffff;
+  background-color: var(--about-bg-color, var(--bg-sage-light));
+  color: var(--text-primary);
   padding-block: var(--section-padding);
 
   @media (max-width: 768px) {
@@ -25,7 +25,8 @@
     height: 500px;
     border-radius: var(--border-radius-standard);
     overflow: hidden;
-    box-shadow: 0 10px 30px color-mix(in srgb, var(--primary-color) 10%, transparent);
+    border: 2px solid var(--border-color);
+    box-shadow: var(--shadow-lg);
     position: relative;
 
     & img {
@@ -50,55 +51,60 @@
     & h2 {
       font-size: 2.2rem;
       margin-block-end: 1.5rem;
-      color: var(--primary-color);
+      color: var(--accent-color);
+    }
+
+    & p {
+      color: var(--text-primary);
+      line-height: 1.7;
     }
   }
 
   /* Background color variants */
   &.about-section--pale-blue-bg {
-    --about-bg-color: var(--light-color);
+    --about-bg-color: var(--bg-sage-light);
   }
 
   &.about-section--white-bg {
-    --about-bg-color: white;
+    --about-bg-color: var(--bg-light);
   }
 
   &.about-section--alt-bg {
     --about-bg-color: var(--primary-color);
-    color: white;
+    color: var(--text-primary);
 
     & .about-text h2 {
-      color: white;
+      color: var(--accent-color);
     }
 
     & .about-text p {
-      color: rgba(255, 255, 255, 0.9);
+      color: var(--text-primary);
     }
   }
 
   &.about-section--dark-bg {
     --about-bg-color: var(--dark-color);
-    color: white;
+    color: var(--text-primary);
 
     & .about-text h2 {
-      color: white;
+      color: var(--accent-color);
     }
 
     & .about-text p {
-      color: rgba(255, 255, 255, 0.9);
+      color: var(--text-primary);
     }
   }
 
   &.about-section--accent-bg {
     --about-bg-color: var(--accent-color);
-    color: white;
+    color: var(--dark-color);
 
     & .about-text h2 {
-      color: white;
+      color: var(--dark-color);
     }
 
     & .about-text p {
-      color: rgba(255, 255, 255, 0.9);
+      color: var(--dark-color);
     }
   }
 }

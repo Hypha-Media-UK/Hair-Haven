@@ -9,7 +9,7 @@
 .product-sections {
   padding-block-start: var(--space-6);
   padding-block-end: var(--section-padding);
-  background-color: white;
+  background-color: var(--bg-cream);
 
   @media (max-width: 768px) {
     padding-block-start: var(--space-4);
@@ -40,7 +40,7 @@
 
     & h2 {
       font-size: var(--heading-h2);
-      color: var(--primary-color);
+      color: var(--accent-color);
       margin-block-end: var(--space-4);
       font-family: var(--font-family-primary);
 
@@ -220,7 +220,7 @@
 
   & h3 {
     font-size: var(--heading-h4);
-    color: var(--primary-color);
+    color: var(--accent-color);
     margin-block-end: var(--space-4);
     font-family: var(--font-family-primary);
 

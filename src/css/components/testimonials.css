@@ -4,8 +4,8 @@
 
 /* Testimonials Section Component Styles */
 .testimonials {
-  background-color: #448e8e;
-  color: #ffffff;
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--dark-color) 100%);
+  color: var(--text-white);
   padding-block: var(--section-padding);
 
   @media (max-width: 768px) {

@@ -8,7 +8,7 @@
   & h2 {
     font-size: var(--text-section-title);
     margin-block-end: var(--space-6);
-    color: var(--primary-color);
+    color: var(--accent-color);
     font-weight: var(--font-weight-semibold);
     position: relative;
 
@@ -24,7 +24,7 @@
   }
 
   & p {
-    color: var(--primary-color-light);
+    color: var(--text-primary);
     font-size: var(--text-lg);
     line-height: var(--line-height-relaxed);
     max-width: 500px;
@@ -86,7 +86,7 @@
 
   & p {
     margin-block-end: var(--space-8);
-    color: var(--primary-color-light);
+    color: var(--text-primary);
     font-size: var(--text-base);
     max-width: 600px;
     margin-inline: auto;
@@ -116,7 +116,7 @@
   & label {
     display: block;
     margin-block-end: var(--space-2);
-    color: var(--primary-color);
+    color: var(--text-white);
     font-weight: var(--font-weight-medium);
     font-size: var(--text-base);
     line-height: var(--line-height-normal);
@@ -132,20 +132,21 @@
     font-size: var(--text-base);
     font-family: inherit;
     transition: var(--transition-standard);
-    background-color: var(--bg-light);
+    background-color: var(--primary-color);
+    color: var(--text-primary);
     box-sizing: border-box;
     min-height: 44px;
 
     &:focus {
       outline: none;
       border-color: var(--accent-color);
-      background-color: white;
+      background-color: var(--bg-light);
       box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent-color) 10%, transparent);
       transform: translateY(-1px);
     }
 
     &::placeholder {
-      color: var(--text-light);
+      color: var(--text-secondary);
       font-size: var(--text-sm);
     }
   }
@@ -371,10 +372,11 @@
 .form-container {
   max-width: 800px;
   margin: 0 auto;
-  background-color: white;
+  background-color: var(--bg-sage-light);
   border-radius: var(--border-radius-standard);
   padding: var(--space-12);
-  box-shadow: var(--card-shadow-medium);
+  border: 2px solid var(--border-color);
+  box-shadow: var(--shadow-lg);
 
   &.form-container-compact {
     max-width: 600px;
@@ -424,24 +426,25 @@ input.fui-input,
 textarea.fui-textarea,
 select.fui-select {
   padding: clamp(0.8rem, 1.5vw, 1rem) !important;
-  border: 2px solid color-mix(in srgb, var(--primary-color) 15%, transparent) !important;
+  border: 2px solid var(--border-color) !important;
   border-radius: clamp(6px, 1vw, 8px) !important;
   font-size: clamp(0.95rem, 1.8vw, 1rem) !important;
   transition: all 0.3s ease !important;
-  background-color: #fafafa !important;
+  background-color: var(--primary-color) !important;
+  color: var(--text-primary) !important;
   box-sizing: border-box !important;
   min-height: 44px !important; /* Minimum touch target size */
 
   &:focus {
     outline: none !important;
     border-color: var(--accent-color) !important;
-    background-color: white !important;
+    background-color: var(--bg-light) !important;
     box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent-color) 10%, transparent) !important;
     transform: translateY(-1px) !important;
   }
 
   &::placeholder {
-    color: color-mix(in srgb, var(--primary-color) 50%, white) !important;
+    color: var(--text-secondary) !important;
     font-size: clamp(0.9rem, 1.6vw, 0.95rem) !important;
   }
 
@@ -495,7 +498,7 @@ label.fui-field-label {
   margin-block-end: clamp(0.6rem, 1.2vw, 0.8rem) !important;
   line-height: 1.4 !important;
   font-weight: 500 !important;
-  color: var(--primary-color) !important;
+  color: var(--text-white) !important;
 }
 
 /* Formie error messages responsive styling */
@@ -524,5 +527,18 @@ label.fui-field-label {
   }
 }
 
+/* Careers Form Section */
+.careers-form-section {
+  background-color: var(--bg-cream);
+  padding-block: 5rem;
+
+  @media (max-width: 768px) {
+    padding-block: 4rem;
+  }
+
+  @media (max-width: 576px) {
+    padding-block: 3rem;
+  }
+}
 
 } /* End @layer components */

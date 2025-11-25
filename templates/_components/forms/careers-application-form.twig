@@ -1,18 +1,9 @@
 {# Careers Application Form Component - Include Version #}
 {# Expected variables: title, description, positions #}
 
-<section id="application-form" class="section">
+<section id="application-form" class="careers-form-section">
     <div class="container">
         <div class="form-container">
-            <style>
-            .contact-form .form-field {
-                margin-block-end: var(--space-4);
-            }
-            .contact-form .form-field label {
-                color: var(--primary-color-light);
-            }
-            </style>
-
             <div class="form-header">
                 <h2>{{ title|default('Apply Now') }}</h2>
                 <p>{{ description|default('Interested in joining our team? Fill out the application form below and we\'ll be in touch.') }}</p>

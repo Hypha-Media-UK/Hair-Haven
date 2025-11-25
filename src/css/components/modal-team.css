@@ -27,16 +27,17 @@
 
   & .member-content {
     padding: var(--space-10);
+    background-color: var(--bg-cream);
 
     & h2 {
       font-size: var(--heading-h2);
       margin-bottom: var(--space-2);
-      color: var(--primary-color);
+      color: var(--accent-color);
     }
 
     & .member-modal-title {
       font-size: var(--text-xl);
-      color: var(--accent-color);
+      color: var(--accent-teal);
       margin-bottom: var(--space-8);
       padding-bottom: var(--space-3);
       border-bottom: 1px solid var(--border-color);
@@ -47,7 +48,7 @@
 
       & p {
         line-height: var(--line-height-relaxed);
-        color: var(--text-secondary);
+        color: var(--text-primary);
       }
     }
 
@@ -57,7 +58,7 @@
       & h3 {
         font-size: var(--heading-h4);
         margin-bottom: var(--space-4);
-        color: var(--primary-color);
+        color: var(--text-white);
       }
 
       & .specialty-tags {
@@ -66,12 +67,14 @@
         gap: var(--space-3);
 
         & .specialty-tag {
-          background-color: var(--bg-light);
+          background-color: var(--bg-sage-light);
           padding: var(--space-2) var(--space-4);
           border-radius: var(--border-radius-full);
           font-size: var(--text-sm);
-          color: var(--primary-color);
+          color: var(--text-white);
+          border: 1px solid var(--border-color);
           display: inline-block;
+          font-weight: 500;
         }
       }
     }

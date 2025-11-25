@@ -2,18 +2,47 @@
 
 /* Call to Action Component Styles (extracted from Vue CallToAction.vue) */
 .cta-section {
-  background-color: #7e8c74;
+  background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-color-dark) 100%);
   background-size: cover;
   background-position: center;
-  color: #ffffff;
+  color: var(--dark-color);
   text-align: center;
   padding-block: 5rem;
 
   & .cta-content {
     max-width: 700px;
     margin: 0 auto;
+  }
+}
 
+/* Light Text Variant - For use with dark or unpredictable background images */
+.cta-section.cta-light-text {
+  /* Dark overlay is applied via inline style in template for better specificity */
+  color: var(--text-white);
 
+  & .section-header {
+    & h2 {
+      color: var(--text-white);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    & p {
+      color: var(--text-primary);
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  & .btn.primary {
+    /* Ensure button has good contrast on dark backgrounds */
+    background-color: var(--accent-color);
+    color: var(--dark-color);
+    border-color: var(--accent-color);
+
+    &:hover {
+      background-color: var(--text-white);
+      color: var(--dark-color);
+      border-color: var(--text-white);
+    }
   }
 }
 

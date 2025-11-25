@@ -19,10 +19,10 @@
   background-image:
     linear-gradient(
       135deg,
-      rgba(64, 78, 92, 0.4) 0%,
-      rgba(64, 78, 92, 0.2) 30%,
-      rgba(0, 0, 0, 0.3) 70%,
-      rgba(0, 0, 0, 0.5) 100%
+      rgba(13, 27, 42, 0.7) 0%,
+      rgba(27, 38, 59, 0.5) 30%,
+      rgba(65, 90, 119, 0.4) 70%,
+      rgba(13, 27, 42, 0.8) 100%
     ),
     var(--hero-bg);
   background-size: cover;
@@ -30,12 +30,12 @@
   background-attachment: fixed;
   display: grid;
   align-items: center;
-  color: white;
+  color: var(--text-white);
   position: relative;
   overflow: hidden;
-  border-bottom: 3px solid #e5e3d3;
+  border-bottom: 3px solid var(--accent-color);
   padding-block: var(--space-12);
-  
+
   /* Performance optimizations */
   will-change: transform;
   transform: translateZ(0);

@@ -9,7 +9,7 @@
   & .position-title {
     font-size: var(--heading-h2);
     margin-bottom: var(--space-2);
-    color: var(--primary-color);
+    color: var(--accent-color);
   }
 
   & .position-meta {
@@ -20,11 +20,12 @@
     border-bottom: 1px solid var(--border-color);
 
     & .type {
-      background-color: color-mix(in srgb, var(--accent-color) 10%, transparent);
-      color: var(--accent-color);
+      background-color: var(--accent-color);
+      color: var(--dark-color);
       padding: var(--space-1) var(--space-3);
       border-radius: var(--border-radius-lg);
       font-size: var(--text-sm);
+      font-weight: 500;
       margin-right: var(--space-4);
     }
 
@@ -43,7 +44,7 @@
 
     & p {
       line-height: var(--line-height-relaxed);
-      color: var(--text-secondary);
+      color: var(--text-primary);
     }
   }
 
@@ -54,14 +55,14 @@
     & h4 {
       font-size: var(--heading-h4);
       margin-bottom: var(--space-4);
-      color: var(--primary-color);
+      color: var(--text-white);
     }
 
     & ul {
       margin-left: var(--space-6);
 
       & li {
-        color: var(--text-secondary);
+        color: var(--text-primary);
         margin-bottom: var(--space-3);
         line-height: var(--line-height-relaxed);
         position: relative;

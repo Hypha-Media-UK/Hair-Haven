@@ -152,6 +152,32 @@ settings:
                             14:
                               - fieldUid
                               - b3726252-6c72-46e5-b01e-d92574299019 # Single Button
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 100
+                            10:
+                              - dateAdded
+                              - '2025-11-25T15:58:43+00:00'
+                            11:
+                              - uid
+                              - 2a8686b0-7dc2-45cb-bcfd-1f08be02b74b
+                            14:
+                              - fieldUid
+                              - d2f55de7-1c60-480a-99db-3d871461fe31 # Text Color
             3:
               - cardThumbAlignment
               - end

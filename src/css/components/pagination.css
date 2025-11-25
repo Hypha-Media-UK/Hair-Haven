@@ -25,9 +25,9 @@
     min-width: 2.5rem;
     height: 2.5rem;
     padding: 0.5rem 0.75rem;
-    border: 1px solid var(--color-border, #e5e7eb);
-    background: var(--color-white, #ffffff);
-    color: var(--color-text, #374151);
+    border: 2px solid var(--border-color);
+    background: var(--bg-sage-light);
+    color: var(--text-primary);
     text-decoration: none;
     font-size: 0.875rem;
     font-weight: 500;
@@ -37,24 +37,25 @@
 }
 
 .pagination-link:hover:not(.disabled):not(.current) {
-    background: var(--color-primary-50, #f0f9ff);
-    border-color: var(--color-primary-300, #7dd3fc);
-    color: var(--color-primary-600, #0284c7);
+    background: var(--bg-light);
+    border-color: var(--accent-color);
+    color: var(--text-white);
     transform: translateY(-1px);
 }
 
 .pagination-link.current {
-    background: var(--color-primary, #0ea5e9);
-    border-color: var(--color-primary, #0ea5e9);
-    color: var(--color-white, #ffffff);
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+    color: var(--dark-color);
     font-weight: 600;
 }
 
 .pagination-link.disabled {
-    background: var(--color-gray-50, #f9fafb);
-    border-color: var(--color-gray-200, #e5e7eb);
-    color: var(--color-gray-400, #9ca3af);
+    background: var(--bg-cream);
+    border-color: var(--border-color);
+    color: var(--text-secondary);
     cursor: not-allowed;
+    opacity: 0.5;
 }
 
 .pagination-prev,
@@ -73,7 +74,7 @@
     justify-content: center;
     min-width: 2.5rem;
     height: 2.5rem;
-    color: var(--color-gray-500, #6b7280);
+    color: var(--text-secondary);
     font-weight: 500;
 }
 
@@ -124,30 +125,9 @@
     }
 }
 
-/* Dark mode support (if applicable) */
-@media (prefers-color-scheme: dark) {
-    .pagination-link {
-        background: var(--color-dark-bg, #1f2937);
-        border-color: var(--color-dark-border, #374151);
-        color: var(--color-dark-text, #f9fafb);
-    }
-    
-    .pagination-link:hover:not(.disabled):not(.current) {
-        background: var(--color-dark-hover, #374151);
-        border-color: var(--color-primary-400, #38bdf8);
-        color: var(--color-primary-400, #38bdf8);
-    }
-    
-    .pagination-link.disabled {
-        background: var(--color-dark-disabled-bg, #111827);
-        border-color: var(--color-dark-disabled-border, #1f2937);
-        color: var(--color-dark-disabled-text, #6b7280);
-    }
-}
-
 /* Focus states for accessibility */
 .pagination-link:focus {
-    outline: 2px solid var(--color-primary, #0ea5e9);
+    outline: 2px solid var(--accent-color);
     outline-offset: 2px;
 }
 

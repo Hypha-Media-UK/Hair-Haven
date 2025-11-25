@@ -3,7 +3,7 @@
 /* News Content Section - Page Layout */
 .news-content {
   padding-block: var(--section-padding);
-  background-color: white;
+  background-color: var(--bg-cream);
 
   @media (max-width: 768px) {
     padding-block: var(--section-padding-mobile);
@@ -29,20 +29,24 @@
 
       & .filter-item {
         padding: 0.5rem 1.5rem;
-        background-color: white;
+        background-color: var(--bg-sage-light);
+        border: 2px solid var(--border-color);
         border-radius: 30px;
         cursor: pointer;
         transition: var(--transition-standard);
-        color: var(--primary-color);
+        color: var(--text-primary);
 
         &:hover {
-          background-color: color-mix(in srgb, var(--accent-color) 35%, white);
+          background-color: var(--bg-light);
+          border-color: var(--accent-color);
+          color: var(--text-white);
           transform: translateY(-2px);
         }
 
         &.active {
           background-color: var(--accent-color);
-          color: white;
+          border-color: var(--accent-color);
+          color: var(--dark-color);
         }
       }
     }

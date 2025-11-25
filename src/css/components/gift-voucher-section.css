@@ -17,7 +17,7 @@
     }
 
     & p {
-      color: var(--primary-color-light);
+      color: var(--text-primary);
       line-height: 1.6;
       margin-block-end: 2rem;
     }
@@ -50,7 +50,7 @@
 
     & .voucher-subtext {
       margin-block-start: 1rem;
-      color: var(--primary-color-light);
+      color: var(--text-primary);
       font-style: italic;
       font-size: 0.95rem;
     }

@@ -8,7 +8,7 @@
   & h2 {
     font-size: var(--text-section-title);
     margin-block-end: var(--space-4);
-    color: var(--primary-color);
+    color: var(--accent-color);
     font-weight: var(--font-weight-semibold);
     line-height: var(--line-height-tight);
   }
@@ -20,7 +20,6 @@
     max-width: 700px;
     margin: 0 auto;
     font-weight: var(--font-weight-normal);
-    opacity: 0.9;
   }
 }
 
@@ -29,11 +28,11 @@
 /* Services Preview */
 .services-preview .section-header {
   & h2 {
-    color: #ffffff;
+    color: var(--accent-color);
   }
 
   & p {
-    color: #e2f7d3;
+    color: var(--text-secondary);
   }
 }
 
@@ -116,16 +115,16 @@
 /* News Section */
 .news-section .section-header {
   & p {
-    color: var(--primary-color-light);
+    color: var(--text-primary);
   }
 }
 
 /* Services Detail Page */
 .services-detail-page .section-header {
   margin-block-start: var(--space-12);
-  
+
   & p {
-    color: var(--primary-color-light);
+    color: var(--text-primary);
   }
 }
 
