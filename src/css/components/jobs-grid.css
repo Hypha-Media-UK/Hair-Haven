@@ -2,7 +2,7 @@
 
 /* Jobs Grid Component Styles (extracted from Vue JobsGrid.vue) */
 .openings-section {
-  background-color: var(--bg-cream);
+  background: linear-gradient(135deg, var(--bg-sage-light) 0%, var(--primary-color) 100%);
   padding-block: 5rem;
 
 

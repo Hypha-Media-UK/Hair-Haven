@@ -2,7 +2,7 @@
 
 /* Footer Component Styles - Dark Navy Theme */
 footer {
-  background: linear-gradient(135deg, var(--primary-color) 0%, var(--dark-color) 100%);
+  background: linear-gradient(135deg, var(--bg-sage-light) 0%, var(--primary-color) 100%);
   color: var(--text-primary);
   padding: 4rem 0 1.5rem;
   margin-block-start: 0.125rem; /* 2px equivalent */

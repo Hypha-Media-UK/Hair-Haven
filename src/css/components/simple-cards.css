@@ -3,7 +3,7 @@
 /* Features Section Component Styles */
 .features {
   padding-block: var(--section-padding);
-  background-color: var(--features-bg-color, var(--bg-sage-light));
+  background: var(--features-bg-color, linear-gradient(135deg, var(--bg-sage-light) 0%, var(--primary-color) 100%));
   color: var(--text-primary);
 
   @media (max-width: 768px) {
