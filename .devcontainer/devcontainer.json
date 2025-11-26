@@ -1,0 +1,19 @@
+{
+  "name": "CraftCMS Codespace",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "forwardPorts": [80, 3306, 3000],
+  "postCreateCommand": "composer install || true && npm install || true",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-azuretools.vscode-docker",
+        "xdebug.php-debug",
+        "bmewburn.vscode-intelephense-client",
+        "pkief.material-icon-theme"
+      ]
+    }
+  },
+  "remoteUser": "vscode"
+}
