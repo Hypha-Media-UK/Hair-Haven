@@ -62,7 +62,7 @@
 
       & .date,
       & .author {
-        color: var(--text-secondary);
+        color: var(--text-primary);
         font-size: 0.9rem;
         display: inline-flex;
         align-items: center;

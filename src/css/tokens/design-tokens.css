@@ -9,11 +9,11 @@
   /* Primary brand colors - Navy & Slate Blues */
   --primary-color: #1b263b;      /* Deep navy blue - primary brand */
   --secondary-color: #415a77;    /* Slate blue - secondary */
-  --accent-color: #ffc300;       /* Vibrant golden yellow - premium accent */
+  --accent-color: #e9c768;       /* Soft golden yellow - premium accent */
   --accent-teal: #b0c4b1;        /* Soft sage green accent */
   --light-color: #e0e1dd;        /* Light gray for text */
   --dark-color: #0d1b2a;         /* Darkest navy - backgrounds */
-  --highlight-color: #ffc300;    /* Golden yellow - highlights and CTAs */
+  --highlight-color: #e9c768;    /* Soft golden yellow - highlights and CTAs */
 
   /* Text colors - Dark theme (light text on dark backgrounds) */
   --text-primary: #e0e1dd;       /* Light gray - primary text */
@@ -24,7 +24,7 @@
 
   /* Functional colors - Dark theme optimized */
   --success-color: #b0c4b1;      /* Soft sage for success */
-  --warning-color: #ffc300;      /* Golden yellow for warnings */
+  --warning-color: #e9c768;      /* Soft golden yellow for warnings */
   --error-color: #ff6b6b;        /* Soft red for errors */
   --info-color: #778da9;         /* Blue-gray for info */
 
@@ -41,8 +41,8 @@
   --border-dark: #e0e1dd;        /* Light border for emphasis */
 
   /* Modern color manipulation - Dark theme variations */
-  --accent-color-dark: #e6b000;  /* Darker golden yellow */
-  --accent-color-light: #ffd43b; /* Lighter golden yellow */
+  --accent-color-dark: #d4b456;  /* Darker soft golden yellow */
+  --accent-color-light: #f0d98a; /* Lighter soft golden yellow */
   --primary-color-light: #415a77; /* Lighter navy (slate) */
   --primary-color-lighter: #778da9; /* Even lighter (blue-gray) */
   --primary-color-lightest: #e0e1dd; /* Lightest (light gray) */
@@ -52,7 +52,7 @@
   --sage-muted: #778da9;         /* Muted blue-gray for subtle elements */
   --teal-bright: #b0c4b1;        /* Sage green for hover states */
   --cream-warm: #e0e1dd;         /* Light gray for backgrounds */
-  --gold-soft: #ffd43b;          /* Soft gold for accents */
+  --gold-soft: #f0d98a;          /* Soft gold for accents */
 
   /* Card and surface colors for dark theme */
   --surface-elevated: #1b263b;   /* Elevated surfaces (cards) - navy */

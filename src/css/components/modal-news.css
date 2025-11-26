@@ -2,6 +2,19 @@
 
 /* News Article Modal Component */
 .news-article-modal {
+  & .modal-content {
+    background-color: var(--bg-sage-light);
+  }
+
+  & .modal-close {
+    color: var(--text-white);
+
+    &:hover {
+      color: var(--accent-color);
+      background-color: var(--bg-light);
+    }
+  }
+
   & .modal-body {
     padding: 0;
   }
@@ -15,7 +28,7 @@
 
   & .news-modal-date,
   & .news-modal-author {
-    color: var(--text-secondary);
+    color: var(--text-primary);
     font-size: var(--text-sm);
     display: inline-flex;
     align-items: center;
@@ -34,7 +47,7 @@
     & h2 {
       font-size: var(--heading-h2);
       margin-bottom: var(--space-4);
-      color: var(--primary-color);
+      color: var(--text-white);
       line-height: var(--line-height-tight);
     }
 
@@ -47,7 +60,7 @@
       & .date,
       & .author,
       & .category {
-        color: var(--text-secondary);
+        color: var(--text-primary);
         font-size: var(--text-base);
         display: inline-flex;
         align-items: center;
@@ -72,7 +85,7 @@
     }
 
     & .news-text {
-      color: var(--text-secondary);
+      color: var(--text-primary);
       line-height: var(--line-height-relaxed);
 
       & p {
@@ -81,7 +94,7 @@
 
       & h4 {
         font-size: var(--heading-h4);
-        color: var(--primary-color);
+        color: var(--text-white);
         margin: var(--space-8) 0 var(--space-4);
       }
 
@@ -102,7 +115,7 @@
 
       & p {
         font-weight: var(--font-weight-semibold);
-        color: var(--primary-color);
+        color: var(--text-white);
         margin-bottom: var(--space-4);
       }
 
@@ -118,12 +131,12 @@
           height: 40px;
           border-radius: var(--border-radius-full);
           background-color: var(--bg-light);
-          color: var(--primary-color);
+          color: var(--text-white);
           transition: var(--transition-standard);
 
           &:hover {
             background-color: var(--accent-color);
-            color: white;
+            color: var(--dark-color);
             transform: translateY(-3px);
           }
         }

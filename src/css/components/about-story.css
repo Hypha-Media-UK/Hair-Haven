@@ -2,7 +2,7 @@
 
 /* About Story Component Styles (extracted from Vue AboutStory.vue) */
 .about-section {
-  background-color: var(--about-bg-color, var(--bg-sage-light));
+  background-color: var(--about-bg-color, var(--primary-color));
   color: var(--text-primary);
   padding-block: var(--section-padding);
 

@@ -2,7 +2,7 @@
 
 /* Page Header Component Styles (extracted from Vue PageHeader.vue) */
 .page-header {
-  background-color: var(--primary-color);
+  background-color: var(--bg-sage-light);
   color: white;
   text-align: center;
   padding: 10rem 0 5rem; /* Increased top padding to accommodate fixed header */
