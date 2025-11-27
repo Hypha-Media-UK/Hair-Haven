@@ -4,60 +4,71 @@
 
 :root {
   /* === COLOR PALETTE === */
-  /* DARK THEME - Hair Haven Navy & Gold Aesthetic */
+  /* NEW CORPORATE BRAND PALETTE - Teal & Grey Aesthetic */
 
-  /* Primary brand colors - Navy & Slate Blues */
-  --primary-color: #1b263b;      /* Deep navy blue - primary brand */
-  --secondary-color: #415a77;    /* Slate blue - secondary */
-  --accent-color: #e9c768;       /* Soft golden yellow - premium accent */
-  --accent-teal: #b0c4b1;        /* Soft sage green accent */
-  --light-color: #e0e1dd;        /* Light gray for text */
-  --dark-color: #0d1b2a;         /* Darkest navy - backgrounds */
+  /* Core brand colors */
+  --ash-grey: #cad2c5;           /* Ash grey - lightest */
+  --muted-teal: #84a98c;         /* Muted teal - light accent */
+  --deep-teal: #52796f;          /* Deep teal - primary brand */
+  --dark-slate-grey: #354f52;    /* Dark slate grey - secondary */
+  --charcoal-blue: #2f3e46;      /* Charcoal blue - darkest */
+
+  /* Primary brand colors mapped to new palette */
+  --primary-color: #354f52;      /* Dark slate grey - primary brand */
+  --secondary-color: #52796f;    /* Deep teal - secondary */
+  --accent-color: #e9c768;       /* Soft golden yellow - premium accent (kept) */
+  --accent-teal: #84a98c;        /* Muted teal accent */
+  --light-color: #cad2c5;        /* Ash grey for text */
+  --dark-color: #2f3e46;         /* Charcoal blue - backgrounds */
   --highlight-color: #e9c768;    /* Soft golden yellow - highlights and CTAs */
 
   /* Text colors - Dark theme (light text on dark backgrounds) */
-  --text-primary: #e0e1dd;       /* Light gray - primary text */
-  --text-secondary: #778da9;     /* Blue-gray - secondary text */
-  --text-light: #778da9;         /* Blue-gray - muted text */
+  --text-primary: #cad2c5;       /* Ash grey - primary text */
+  --text-secondary: #84a98c;     /* Muted teal - secondary text */
+  --text-light: #84a98c;         /* Muted teal - muted text */
   --text-white: #ffffff;         /* Pure white for emphasis */
-  --text-cream: #e0e1dd;         /* Light gray for softer text */
+  --text-cream: #cad2c5;         /* Ash grey for softer text */
 
   /* Functional colors - Dark theme optimized */
-  --success-color: #b0c4b1;      /* Soft sage for success */
+  --success-color: #84a98c;      /* Muted teal for success */
   --warning-color: #e9c768;      /* Soft golden yellow for warnings */
   --error-color: #ff6b6b;        /* Soft red for errors */
-  --info-color: #778da9;         /* Blue-gray for info */
+  --info-color: #84a98c;         /* Muted teal for info */
 
   /* Background colors - Dark theme layers */
-  --bg-light: #1b263b;           /* Navy - cards and elevated surfaces */
-  --bg-cream: #0d1b2a;           /* Darkest navy - body background */
-  --bg-sage-light: #415a77;      /* Slate blue - feature sections */
-  --bg-sage: #1b263b;            /* Navy - cards */
-  --bg-alternate: #1b263b;       /* Navy - alternate sections */
+  --bg-light: #354f52;           /* Dark slate grey - cards and elevated surfaces */
+  --bg-cream: #2f3e46;           /* Charcoal blue - body background */
+  --bg-sage-light: #52796f;      /* Deep teal - feature sections */
+  --bg-sage: #354f52;            /* Dark slate grey - cards */
+  --bg-alternate: #354f52;       /* Dark slate grey - alternate sections */
 
   /* Border colors - Dark theme */
-  --border-color: #415a77;       /* Slate blue border */
-  --border-medium: #778da9;      /* Blue-gray border */
-  --border-dark: #e0e1dd;        /* Light border for emphasis */
+  --border-color: #52796f;       /* Deep teal border */
+  --border-medium: #84a98c;      /* Muted teal border */
+  --border-dark: #cad2c5;        /* Ash grey border for emphasis */
 
   /* Modern color manipulation - Dark theme variations */
   --accent-color-dark: #d4b456;  /* Darker soft golden yellow */
   --accent-color-light: #f0d98a; /* Lighter soft golden yellow */
-  --primary-color-light: #415a77; /* Lighter navy (slate) */
-  --primary-color-lighter: #778da9; /* Even lighter (blue-gray) */
-  --primary-color-lightest: #e0e1dd; /* Lightest (light gray) */
+  --primary-color-light: #52796f; /* Lighter primary (deep teal) */
+  --primary-color-lighter: #84a98c; /* Even lighter (muted teal) */
+  --primary-color-lightest: #cad2c5; /* Lightest (ash grey) */
 
   /* Dark theme specific color variations */
-  --sage-bright: #b0c4b1;        /* Bright sage for emphasis */
-  --sage-muted: #778da9;         /* Muted blue-gray for subtle elements */
-  --teal-bright: #b0c4b1;        /* Sage green for hover states */
-  --cream-warm: #e0e1dd;         /* Light gray for backgrounds */
+  --sage-bright: #84a98c;        /* Muted teal for emphasis */
+  --sage-muted: #84a98c;         /* Muted teal for subtle elements */
+  --teal-bright: #84a98c;        /* Muted teal for hover states */
+  --cream-warm: #cad2c5;         /* Ash grey for backgrounds */
   --gold-soft: #f0d98a;          /* Soft gold for accents */
 
   /* Card and surface colors for dark theme */
-  --surface-elevated: #1b263b;   /* Elevated surfaces (cards) - navy */
-  --surface-base: #0d1b2a;       /* Base surface level - darkest navy */
-  --surface-sunken: #0d1b2a;     /* Sunken/background areas - darkest navy */
+  --surface-elevated: #354f52;   /* Elevated surfaces (cards) - dark slate grey */
+  --surface-base: #2f3e46;       /* Base surface level - charcoal blue */
+  --surface-sunken: #2f3e46;     /* Sunken/background areas - charcoal blue */
+
+  /* Gradient colors - Teal gradient for headers, footers, and sections */
+  --gradient-teal-light: #70907a; /* Lighter teal - gradient end */
+  --gradient-teal-dark: #52796f;  /* Deep teal - gradient start */
 
   /* === TYPOGRAPHY === */
   /* Font families */

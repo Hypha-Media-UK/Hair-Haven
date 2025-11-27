@@ -3,7 +3,7 @@
 /* Products Showcase Section Component Styles */
 .products-showcase {
   padding-block: var(--section-padding);
-  background: linear-gradient(135deg, var(--bg-sage-light) 0%, var(--primary-color) 100%);
+  background: linear-gradient(135deg, var(--gradient-teal-dark) 0%, var(--gradient-teal-light) 100%);
   color: var(--text-primary);
 
   @media (max-width: 768px) {

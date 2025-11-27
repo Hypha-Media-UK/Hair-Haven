@@ -8,7 +8,7 @@ header {
   width: 100%;
   z-index: var(--z-index-fixed);
   padding-block: var(--header-padding-block);
-  background-color: rgba(27, 38, 59, 0.95);
+  background: linear-gradient(135deg, rgba(82, 121, 111, 0.95) 0%, rgba(112, 144, 122, 0.95) 100%);
   border-bottom: 1px solid var(--border-color);
   will-change: transform, padding;
   transform: translateZ(0); /* Force GPU acceleration */
@@ -16,7 +16,7 @@ header {
 
   &.scrolled {
     padding-block: var(--header-padding-block-scrolled);
-    background-color: rgba(27, 38, 59, 0.98);
+    background: linear-gradient(135deg, rgba(82, 121, 111, 0.98) 0%, rgba(112, 144, 122, 0.98) 100%);
     box-shadow: var(--shadow-md);
     border-bottom: 1px solid var(--accent-color);
   }
