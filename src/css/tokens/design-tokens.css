@@ -10,16 +10,16 @@
   --ash-grey: #cad2c5;           /* Ash grey - lightest */
   --muted-teal: #84a98c;         /* Muted teal - light accent */
   --deep-teal: #52796f;          /* Deep teal - primary brand */
-  --dark-slate-grey: #354f52;    /* Dark slate grey - secondary */
-  --charcoal-blue: #2f3e46;      /* Charcoal blue - darkest */
+  --dark-slate-grey: #363A43;    /* Dark slate grey - consolidated dark background */
+  --charcoal-blue: #363A43;      /* Charcoal blue - consolidated dark background */
 
   /* Primary brand colors mapped to new palette */
-  --primary-color: #354f52;      /* Dark slate grey - primary brand */
+  --primary-color: #363A43;      /* Dark slate grey - consolidated dark background */
   --secondary-color: #52796f;    /* Deep teal - secondary */
   --accent-color: #e9c768;       /* Soft golden yellow - premium accent (kept) */
   --accent-teal: #84a98c;        /* Muted teal accent */
   --light-color: #cad2c5;        /* Ash grey for text */
-  --dark-color: #2f3e46;         /* Charcoal blue - backgrounds */
+  --dark-color: #363A43;         /* Consolidated dark background */
   --highlight-color: #e9c768;    /* Soft golden yellow - highlights and CTAs */
 
   /* Text colors - Dark theme (light text on dark backgrounds) */
@@ -36,18 +36,22 @@
   --info-color: #84a98c;         /* Muted teal for info */
 
   /* Background colors - Dark theme layers */
-  /* Semantic section backgrounds - use these for consistency */
-  --section-bg-darkest: #2f3e46;     /* Charcoal blue - darkest sections (interior, body) */
-  --section-bg-dark: #354f52;        /* Dark slate grey - dark sections (page headers, about, cards) */
-  --section-bg-teal: #52796f;        /* Deep teal - teal sections (unused currently) */
+  /* PRIMARY DARK BACKGROUND - Consolidated single source */
+  --bg-dark-primary: #363A43;        /* Primary dark background - used for cards, sections, surfaces */
+  --bg-dark-gradient: linear-gradient(135deg, #2f3540 0%, #363A43 50%, #3d4149 100%); /* Subtle dark gradient */
+
+  /* Semantic section backgrounds - all use consolidated dark background */
+  --section-bg-darkest: var(--bg-dark-primary);     /* Darkest sections (interior, body) */
+  --section-bg-dark: var(--bg-dark-primary);        /* Dark sections (page headers, about, cards) */
+  --section-bg-teal: #52796f;        /* Deep teal - teal sections (special use only) */
   --section-bg-gradient: linear-gradient(135deg, #52796f 0%, #70907a 100%); /* Teal gradient - headers, footers, features */
 
   /* Legacy aliases - kept for backwards compatibility, will be phased out */
-  --bg-light: var(--section-bg-dark);
-  --bg-cream: var(--section-bg-darkest);
+  --bg-light: var(--bg-dark-primary);
+  --bg-cream: var(--bg-dark-primary);
   --bg-sage-light: var(--section-bg-teal);
-  --bg-sage: var(--section-bg-dark);
-  --bg-alternate: var(--section-bg-dark);
+  --bg-sage: var(--bg-dark-primary);
+  --bg-alternate: var(--bg-dark-primary);
 
   /* Border colors - Dark theme */
   --border-color: #52796f;       /* Deep teal border */
@@ -68,10 +72,14 @@
   --cream-warm: #cad2c5;         /* Ash grey for backgrounds */
   --gold-soft: #f0d98a;          /* Soft gold for accents */
 
-  /* Card and surface colors for dark theme */
-  --surface-elevated: #354f52;   /* Elevated surfaces (cards) - dark slate grey */
-  --surface-base: #2f3e46;       /* Base surface level - charcoal blue */
-  --surface-sunken: #2f3e46;     /* Sunken/background areas - charcoal blue */
+  /* Card and surface colors for dark theme - all consolidated */
+  --surface-elevated: var(--bg-dark-primary);   /* Elevated surfaces (cards) */
+  --surface-base: var(--bg-dark-primary);       /* Base surface level */
+  --surface-sunken: var(--bg-dark-primary);     /* Sunken/background areas */
+
+  /* Card background - consolidated */
+  --card-bg-color: var(--bg-dark-primary);      /* Default card background */
+  --about-bg-color: var(--bg-dark-primary);     /* About section background */
 
   /* Gradient colors - Teal gradient for headers, footers, and sections */
   --gradient-teal-light: #70907a; /* Lighter teal - gradient end */
