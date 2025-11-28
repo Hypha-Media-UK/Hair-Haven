@@ -34,14 +34,15 @@
 
   & .btn.primary {
     /* Ensure button has good contrast on dark backgrounds */
-    background-color: var(--accent-color);
-    color: var(--dark-color);
-    border-color: var(--accent-color);
+    background-color: var(--accent-teal);
+    color: var(--text-white);
+    border-color: var(--accent-teal);
 
     &:hover {
-      background-color: var(--text-white);
-      color: var(--dark-color);
-      border-color: var(--text-white);
+      background-color: var(--gradient-teal-light);
+      color: var(--text-white);
+      border-color: var(--gradient-teal-light);
+      box-shadow: 0 8px 20px rgba(132, 169, 140, 0.4);
     }
   }
 }

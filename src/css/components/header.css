@@ -18,7 +18,7 @@ header {
     padding-block: var(--header-padding-block-scrolled);
     background: linear-gradient(135deg, rgba(82, 121, 111, 0.98) 0%, rgba(112, 144, 122, 0.98) 100%); /* Using gradient colors directly for transparency */
     box-shadow: var(--shadow-md);
-    border-bottom: 1px solid var(--accent-color);
+    border-bottom: 1px solid var(--accent-teal);
   }
 }
 
@@ -35,7 +35,7 @@ header {
 .logo h1 {
   font-size: 1.8rem;
   margin: 0;
-  color: var(--accent-color);
+  color: var(--accent-teal);
   font-weight: 700;
   transition: all 0.3s ease;
   letter-spacing: -0.02em;
@@ -68,7 +68,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: var(--accent-color);
+  color: var(--accent-teal);
 }
 
 nav ul li a::after {
@@ -78,7 +78,7 @@ nav ul li a::after {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: var(--accent-color);
+  background-color: var(--accent-teal);
   transition: width 0.3s ease;
 }
 
@@ -86,13 +86,13 @@ nav ul li a:hover::after,
 nav ul li a.router-link-active::after,
 nav ul li a.active::after {
   width: 100%;
-  background-color: var(--accent-color);
+  background-color: var(--accent-teal);
 }
 
-/* Book Now Button Styling - Golden yellow with dark text */
+/* Book Now Button Styling - Teal with white text */
 nav ul li .btn-book-now {
-  background-color: var(--accent-color);
-  color: var(--dark-color);
+  background-color: var(--accent-teal);
+  color: var(--text-white);
   padding: var(--space-2) var(--space-4);
   border-radius: var(--border-radius-standard);
   font-size: var(--text-sm);
@@ -102,18 +102,18 @@ nav ul li .btn-book-now {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid var(--accent-color);
+  border: 2px solid var(--accent-teal);
   box-shadow: var(--shadow-sm);
   vertical-align: baseline;
   line-height: 1;
 }
 
 nav ul li .btn-book-now:hover {
-  background-color: var(--accent-color-dark);
-  border-color: var(--accent-color-dark);
+  background-color: var(--gradient-teal-light);
+  border-color: var(--gradient-teal-light);
   transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
-  color: var(--dark-color);
+  box-shadow: 0 4px 12px rgba(132, 169, 140, 0.4);
+  color: var(--text-white);
 }
 
 nav ul li .btn-book-now::after {

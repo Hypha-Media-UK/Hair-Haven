@@ -137,7 +137,7 @@ a {
 }
 
 a:hover {
-  color: var(--accent-color);
+  color: var(--gradient-teal-light);
 }
 
 img {
@@ -178,7 +178,7 @@ main {
   display: block;
   width: 60px;
   height: 3px;
-  background-color: var(--accent-color);
+  background-color: var(--accent-teal);
   margin: var(--space-4) auto var(--space-6);
 }
 

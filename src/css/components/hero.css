@@ -33,7 +33,7 @@
   color: var(--text-white);
   position: relative;
   overflow: hidden;
-  border-bottom: 3px solid var(--accent-color);
+  border-bottom: 3px solid var(--accent-teal);
   padding-block: var(--space-12);
 
   /* Performance optimizations */
@@ -80,7 +80,7 @@
         font-weight: var(--font-weight-bold);
         margin-block-end: var(--space-6);
         line-height: var(--line-height-tight);
-        color: var(--accent-color);
+        color: var(--accent-teal);
         letter-spacing: -0.02em;
 
         & strong {
@@ -134,14 +134,14 @@
         }
 
         &.primary {
-          background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-color-dark) 100%);
+          background: linear-gradient(135deg, var(--accent-teal) 0%, var(--gradient-teal-dark) 100%);
           color: white;
-          border-color: var(--accent-color);
+          border-color: var(--accent-teal);
 
           &:hover {
-            background: linear-gradient(135deg, var(--accent-color-dark) 0%, var(--accent-color) 100%);
+            background: linear-gradient(135deg, var(--gradient-teal-light) 0%, var(--accent-teal) 100%);
             transform: translateY(-2px);
-            box-shadow: var(--shadow-lg);
+            box-shadow: 0 8px 20px rgba(132, 169, 140, 0.4);
           }
 
           &:active {

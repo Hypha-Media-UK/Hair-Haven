@@ -6,7 +6,7 @@ footer {
   color: var(--text-primary);
   padding: 4rem 0 1.5rem;
   margin-block-start: 0.125rem; /* 2px equivalent */
-  border-top: 1px solid var(--accent-color);
+  border-top: 1px solid var(--accent-teal);
 }
 
 .footer-content {
@@ -35,7 +35,7 @@ footer {
       inset-block-end: -10px;
       width: 50px;
       height: 3px;
-      background-color: var(--accent-color);
+      background-color: var(--accent-teal);
     }
   }
 
@@ -84,7 +84,7 @@ footer {
         }
 
         & i {
-          color: var(--accent-color);
+          color: var(--accent-teal);
           flex-shrink: 0;
           margin-top: 2px;
           width: 16px;
@@ -108,7 +108,7 @@ footer {
           flex: 1;
 
           &:hover {
-            color: var(--accent-color);
+            color: var(--gradient-teal-light);
           }
         }
       }
@@ -149,7 +149,7 @@ footer {
 
         &.closed {
           & .hours {
-            color: var(--accent-color);
+            color: var(--accent-teal);
             font-style: italic;
           }
         }
@@ -202,7 +202,7 @@ footer {
             }
 
             &:hover {
-              color: var(--accent-color);
+              color: var(--gradient-teal-light);
             }
           }
         }
