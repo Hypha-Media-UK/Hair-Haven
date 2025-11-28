@@ -4,7 +4,7 @@
 
 /* Testimonials Section Component Styles */
 .testimonials {
-  background: linear-gradient(135deg, var(--primary-color) 0%, var(--dark-color) 100%);
+  background: linear-gradient(135deg, var(--section-bg-dark) 0%, var(--section-bg-darkest) 100%);
   color: var(--text-white);
   padding-block: var(--section-padding);
 

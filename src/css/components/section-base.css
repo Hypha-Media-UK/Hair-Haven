@@ -10,21 +10,19 @@
 }
 
 /* Section background variants - Teal Theme */
-.section-base--white {
-  background-color: #448e8e;
-  color: #e2f7d3;
+.section-base--darkest {
+  background-color: var(--section-bg-darkest);
+  color: var(--text-primary);
 }
 
-.section-base--light {
-  background-color: #448e8e;
-  color: #e2f7d3;
+.section-base--dark {
+  background-color: var(--section-bg-dark);
+  color: var(--text-primary);
 }
 
-.section-base--primary {
-  background-color: #448e8e;
-  color: #e2f7d3;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+.section-base--gradient {
+  background: var(--section-bg-gradient);
+  color: var(--text-primary);
 }
 
 .section-base--secondary {

@@ -23,7 +23,8 @@
 
 .modal-content {
   position: relative;
-  background-color: white;
+  background-color: var(--section-bg-teal);
+  color: var(--text-primary);
   border-radius: var(--border-radius-standard);
   max-height: 85vh;
   overflow-y: auto;
@@ -60,7 +61,7 @@
   background: none;
   border: none;
   font-size: var(--text-2xl);
-  color: var(--primary-color);
+  color: var(--text-white);
   cursor: pointer;
   z-index: 10;
   width: 40px;
@@ -73,7 +74,7 @@
 
   &:hover {
     color: var(--accent-color);
-    background-color: var(--bg-light);
+    background-color: rgba(255, 255, 255, 0.1);
   }
 
   &:focus {

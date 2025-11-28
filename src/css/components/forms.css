@@ -132,21 +132,21 @@
     font-size: var(--text-base);
     font-family: inherit;
     transition: var(--transition-standard);
-    background-color: #879abe;
-    color: var(--dark-color);
+    background-color: rgba(202, 210, 197, 0.4);
+    color: var(--text-white);
     box-sizing: border-box;
     min-height: 44px;
 
     &:focus {
       outline: none;
       border-color: var(--accent-color);
-      background-color: #9daec9;
+      background-color: rgba(202, 210, 197, 0.5);
       box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent-color) 10%, transparent);
       transform: translateY(-1px);
     }
 
     &::placeholder {
-      color: #4a5a7a;
+      color: rgba(202, 210, 197, 0.7);
       font-size: var(--text-sm);
     }
   }
@@ -187,18 +187,18 @@
       padding: var(--space-6);
       text-align: center;
       cursor: pointer;
-      background-color: #879abe;
-      color: var(--dark-color);
+      background-color: rgba(202, 210, 197, 0.4);
+      color: var(--text-white);
       min-height: 60px;
 
       &:hover {
         border-color: var(--accent-color);
-        background-color: #9daec9;
+        background-color: rgba(202, 210, 197, 0.5);
       }
 
       &:focus {
         border-color: var(--accent-color);
-        background-color: #9daec9;
+        background-color: rgba(202, 210, 197, 0.5);
         box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent-color) 10%, transparent);
       }
     }
@@ -431,21 +431,21 @@ select.fui-select {
   border-radius: clamp(6px, 1vw, 8px) !important;
   font-size: clamp(0.95rem, 1.8vw, 1rem) !important;
   transition: all 0.3s ease !important;
-  background-color: #879abe !important;
-  color: var(--dark-color) !important;
+  background-color: rgba(202, 210, 197, 0.4) !important;
+  color: var(--text-white) !important;
   box-sizing: border-box !important;
   min-height: 44px !important; /* Minimum touch target size */
 
   &:focus {
     outline: none !important;
     border-color: var(--accent-color) !important;
-    background-color: #9daec9 !important;
+    background-color: rgba(202, 210, 197, 0.5) !important;
     box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent-color) 10%, transparent) !important;
     transform: translateY(-1px) !important;
   }
 
   &::placeholder {
-    color: #4a5a7a !important;
+    color: rgba(202, 210, 197, 0.7) !important;
     font-size: clamp(0.9rem, 1.6vw, 0.95rem) !important;
   }
 

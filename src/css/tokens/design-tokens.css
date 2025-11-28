@@ -36,11 +36,18 @@
   --info-color: #84a98c;         /* Muted teal for info */
 
   /* Background colors - Dark theme layers */
-  --bg-light: #354f52;           /* Dark slate grey - cards and elevated surfaces */
-  --bg-cream: #2f3e46;           /* Charcoal blue - body background */
-  --bg-sage-light: #52796f;      /* Deep teal - feature sections */
-  --bg-sage: #354f52;            /* Dark slate grey - cards */
-  --bg-alternate: #354f52;       /* Dark slate grey - alternate sections */
+  /* Semantic section backgrounds - use these for consistency */
+  --section-bg-darkest: #2f3e46;     /* Charcoal blue - darkest sections (interior, body) */
+  --section-bg-dark: #354f52;        /* Dark slate grey - dark sections (page headers, about, cards) */
+  --section-bg-teal: #52796f;        /* Deep teal - teal sections (unused currently) */
+  --section-bg-gradient: linear-gradient(135deg, #52796f 0%, #70907a 100%); /* Teal gradient - headers, footers, features */
+
+  /* Legacy aliases - kept for backwards compatibility, will be phased out */
+  --bg-light: var(--section-bg-dark);
+  --bg-cream: var(--section-bg-darkest);
+  --bg-sage-light: var(--section-bg-teal);
+  --bg-sage: var(--section-bg-dark);
+  --bg-alternate: var(--section-bg-dark);
 
   /* Border colors - Dark theme */
   --border-color: #52796f;       /* Deep teal border */

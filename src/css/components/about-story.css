@@ -2,7 +2,7 @@
 
 /* About Story Component Styles (extracted from Vue AboutStory.vue) */
 .about-section {
-  background-color: var(--about-bg-color, var(--primary-color));
+  background-color: var(--about-bg-color, var(--section-bg-darkest));
   color: var(--text-primary);
   padding-block: var(--section-padding);
 
@@ -61,16 +61,16 @@
   }
 
   /* Background color variants */
-  &.about-section--pale-blue-bg {
-    --about-bg-color: var(--bg-sage-light);
+  &.about-section--teal-bg {
+    --about-bg-color: var(--section-bg-teal);
   }
 
-  &.about-section--white-bg {
-    --about-bg-color: var(--bg-light);
+  &.about-section--dark-bg {
+    --about-bg-color: var(--section-bg-dark);
   }
 
-  &.about-section--alt-bg {
-    --about-bg-color: var(--primary-color);
+  &.about-section--gradient-bg {
+    background: var(--section-bg-gradient);
     color: var(--text-primary);
 
     & .about-text h2 {

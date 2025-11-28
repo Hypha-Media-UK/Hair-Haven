@@ -38,12 +38,14 @@
   margin-block-start: auto;
 
   & a {
-    background-color: color-mix(in srgb, var(--primary-color) 8%, transparent);
-    color: var(--primary-color);
+    background-color: rgba(255, 255, 255, 0.2);
+    color: var(--text-white);
+    border: 2px solid rgba(255, 255, 255, 0.3);
 
     &:hover {
       background-color: var(--accent-color);
       color: white;
+      border-color: var(--accent-color);
       transform: translateY(-3px) scale(1.1);
       box-shadow: 0 5px 15px color-mix(in srgb, var(--accent-color) 40%, transparent);
     }

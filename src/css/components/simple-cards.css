@@ -3,7 +3,7 @@
 /* Features Section Component Styles */
 .features {
   padding-block: var(--section-padding);
-  background: var(--features-bg-color, linear-gradient(135deg, var(--gradient-teal-dark) 0%, var(--gradient-teal-light) 100%));
+  background: var(--features-bg-color, var(--section-bg-gradient));
   color: var(--text-primary);
 
   @media (max-width: 768px) {
@@ -41,15 +41,15 @@
 
   /* Background color variants */
   &.features--alt-bg {
-    --features-bg-color: var(--bg-alternate);
-    color: var(--text-primary);
+    --features-bg-color: var(--section-bg-dark);
+    color: var(--text-white);
 
     & .section-header h2 {
       color: var(--accent-color);
     }
 
     & .section-header p {
-      color: var(--text-secondary);
+      color: var(--text-white);
     }
 
     /* Only apply card background if no card variant is specified */
@@ -59,7 +59,25 @@
   }
 
   &.features--dark-bg {
-    --features-bg-color: var(--primary-color);
+    --features-bg-color: var(--section-bg-dark);
+    color: var(--text-white);
+
+    & .section-header h2 {
+      color: var(--text-white);
+    }
+
+    & .section-header p {
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    /* Only apply card background if no card variant is specified */
+    &:not([class*="features--card-"]) .feature-card {
+      background-color: var(--surface-elevated);
+    }
+  }
+
+  &.features--darkest-bg {
+    --features-bg-color: var(--section-bg-darkest);
     color: var(--text-white);
 
     & .section-header h2 {
@@ -95,7 +113,7 @@
   }
 
   &.features--white-bg {
-    --features-bg-color: var(--bg-light);
+    --features-bg-color: var(--section-bg-dark);
   }
 
   &.features--pale-blue-bg {
@@ -119,7 +137,7 @@
 
     & .feature-icon {
       font-size: 2.5rem;
-      color: var(--card-icon-color, var(--accent-color));
+      color: var(--card-icon-color, var(--text-primary));
       margin-block-end: 1.5rem;
     }
 
@@ -130,7 +148,7 @@
     }
 
     & p {
-      color: var(--card-text-light-color, var(--text-secondary));
+      color: var(--card-text-light-color, var(--text-primary));
       line-height: 1.6;
     }
   }
@@ -138,50 +156,50 @@
   /* Card color variants */
   &.features--card-dark {
     --card-bg-color: var(--primary-color);
-    --card-text-color: var(--text-white);
+    --card-text-color: var(--text-primary);
     --card-heading-color: var(--text-white);
-    --card-text-light-color: rgba(255, 255, 255, 0.9);
-    --card-icon-color: var(--accent-color);
+    --card-text-light-color: var(--text-primary);
+    --card-icon-color: var(--text-primary);
   }
 
   &.features--card-accent {
     --card-bg-color: var(--accent-color);
-    --card-text-color: var(--text-white);
+    --card-text-color: var(--text-primary);
     --card-heading-color: var(--text-white);
-    --card-text-light-color: rgba(255, 255, 255, 0.9);
-    --card-icon-color: var(--text-white);
+    --card-text-light-color: var(--text-primary);
+    --card-icon-color: var(--text-primary);
   }
 
   &.features--card-primary {
     --card-bg-color: var(--primary-color);
-    --card-text-color: var(--text-white);
+    --card-text-color: var(--text-primary);
     --card-heading-color: var(--text-white);
-    --card-text-light-color: rgba(255, 255, 255, 0.9);
-    --card-icon-color: var(--accent-color);
+    --card-text-light-color: var(--text-primary);
+    --card-icon-color: var(--text-primary);
   }
 
   &.features--card-light {
     --card-bg-color: var(--bg-light);
     --card-text-color: var(--text-primary);
     --card-heading-color: var(--text-white);
-    --card-text-light-color: var(--text-secondary);
-    --card-icon-color: var(--accent-color);
+    --card-text-light-color: var(--text-primary);
+    --card-icon-color: var(--text-primary);
   }
 
   &.features--card-white {
     --card-bg-color: var(--bg-light);
     --card-text-color: var(--text-primary);
     --card-heading-color: var(--text-white);
-    --card-text-light-color: var(--text-secondary);
-    --card-icon-color: var(--accent-teal);
+    --card-text-light-color: var(--text-primary);
+    --card-icon-color: var(--text-primary);
   }
 
   &.features--card-transparent {
     --card-bg-color: rgba(27, 38, 59, 0.7);
     --card-text-color: var(--text-primary);
     --card-heading-color: var(--text-white);
-    --card-text-light-color: var(--text-secondary);
-    --card-icon-color: var(--accent-color);
+    --card-text-light-color: var(--text-primary);
+    --card-icon-color: var(--text-primary);
 
     backdrop-filter: blur(10px);
     border: 1px solid var(--border-color);
@@ -191,8 +209,8 @@
     --card-bg-color: var(--bg-sage-light);
     --card-text-color: var(--text-primary);
     --card-heading-color: var(--text-white);
-    --card-text-light-color: var(--text-secondary);
-    --card-icon-color: var(--accent-teal);
+    --card-text-light-color: var(--text-primary);
+    --card-icon-color: var(--text-primary);
   }
 }
 

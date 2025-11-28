@@ -15,7 +15,7 @@
 
   & p {
     font-size: var(--text-lg);
-    color: var(--text-secondary);
+    color: var(--text-white);
     line-height: var(--line-height-relaxed);
     max-width: 700px;
     margin: 0 auto;
@@ -32,7 +32,7 @@
   }
 
   & p {
-    color: var(--text-secondary);
+    color: var(--text-white);
   }
 }
 
@@ -115,7 +115,7 @@
 /* News Section */
 .news-section .section-header {
   & p {
-    color: var(--text-primary);
+    color: var(--text-white);
   }
 }
 
@@ -124,7 +124,7 @@
   margin-block-start: var(--space-12);
 
   & p {
-    color: var(--text-primary);
+    color: var(--text-white);
   }
 }
 

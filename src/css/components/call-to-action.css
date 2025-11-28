@@ -2,10 +2,10 @@
 
 /* Call to Action Component Styles (extracted from Vue CallToAction.vue) */
 .cta-section {
-  background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-color-dark) 100%);
+  background: linear-gradient(135deg, var(--section-bg-dark) 0%, var(--section-bg-darkest) 100%);
   background-size: cover;
   background-position: center;
-  color: var(--dark-color);
+  color: var(--text-primary);
   text-align: center;
   padding-block: 5rem;
 

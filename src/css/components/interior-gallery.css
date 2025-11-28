@@ -2,7 +2,7 @@
 
 /* Interior Gallery Component Styles (extracted from Vue InteriorGallery.vue) */
 .interior-section {
-  background-color: var(--bg-cream);
+  background-color: var(--section-bg-darkest);
   padding-block: 5rem;
 
 

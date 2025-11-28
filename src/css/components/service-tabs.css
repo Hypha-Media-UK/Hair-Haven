@@ -24,8 +24,8 @@
     min-width: 120px;
     padding: 1.5rem 1rem;
     text-align: center;
-    background-color: var(--bg-sage-light);
-    color: var(--text-primary);
+    background-color: var(--primary-color);
+    color: var(--text-white);
     cursor: pointer;
     transition: all 0.3s ease;
     border-inline-end: 1px solid var(--border-color);
@@ -47,8 +47,8 @@
     }
 
     &:hover {
-      background-color: var(--primary-color);
-      color: var(--text-white);
+      background-color: var(--bg-sage-light);
+      color: var(--text-primary);
 
       & i {
         color: var(--accent-color);

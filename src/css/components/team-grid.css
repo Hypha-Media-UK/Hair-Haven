@@ -51,6 +51,7 @@
       position: relative;
       box-shadow: var(--shadow-lg);
       border: 2px solid var(--border-color);
+      background-color: white;
 
       & img {
         width: 100%;
